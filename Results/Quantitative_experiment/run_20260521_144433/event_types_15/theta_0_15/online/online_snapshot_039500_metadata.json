@@ -1,0 +1,34 @@
+{
+  "algorithm": "online_stsp",
+  "online_theta": 0.15,
+  "event_count": 39500,
+  "pattern_count": 189,
+  "significant_synapse_count": 99,
+  "interval_seconds": 1.8680981659999816,
+  "cumulative_seconds": 145.22842429100274,
+  "snapshot_extraction_seconds": 0.0019061249986407347,
+  "patterns_path": "Results/Quantitative_experiment/run_20260521_144433/event_types_15/theta_0_15/online/online_snapshot_039500_patterns.csv",
+  "metadata_path": "Results/Quantitative_experiment/run_20260521_144433/event_types_15/theta_0_15/online/online_snapshot_039500_metadata.json",
+  "network": {
+    "cells": 100,
+    "event_types": 15,
+    "neurons": 1500,
+    "synapses": 231840,
+    "grid_shape": [
+      10,
+      10
+    ],
+    "spatial_threshold_meters": 10000.0
+  },
+  "learning": {
+    "eta": 1.0,
+    "lambda_decay": 0.1,
+    "tau_activation": 120.0,
+    "tau_refractory": 12.0,
+    "theta": 0.15,
+    "max_weight": 10.0,
+    "significance_threshold": 1.5
+  },
+  "max_pattern_length": 5,
+  "max_snapshot_patterns": null
+}

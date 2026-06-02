@@ -1,0 +1,13 @@
+algorithm,event_count,target_pattern_count,spatial_radius,temporal_window,threshold,pattern_count,mining_seconds,phase
+sts_miner,500,5,250.0,15.0,1.0,29,0.025586542004020885,low
+sts_miner,500,5,250.0,15.0,2.0,29,0.025341082997329067,high
+sts_miner,500,5,250.0,15.0,4.0,29,0.02551258399762446,expand_high
+sts_miner,500,5,250.0,15.0,8.0,29,0.025390333001269028,expand_high
+sts_miner,500,5,250.0,15.0,16.0,29,0.025372167001478374,expand_high
+sts_miner,500,5,250.0,15.0,32.0,29,0.02535170899500372,expand_high
+sts_miner,500,5,250.0,15.0,64.0,29,0.026024665996374097,expand_high
+sts_miner,500,5,250.0,15.0,128.0,28,0.02670104199933121,expand_high
+sts_miner,500,5,250.0,15.0,256.0,22,0.025752875000762288,expand_high
+sts_miner,500,5,250.0,15.0,512.0,12,0.023571167002955917,expand_high
+sts_miner,500,5,250.0,15.0,1024.0,0,0.021934500000497792,expand_high
+sts_miner,500,5,250.0,15.0,768.0,4,0.023675083000853192,binary_1

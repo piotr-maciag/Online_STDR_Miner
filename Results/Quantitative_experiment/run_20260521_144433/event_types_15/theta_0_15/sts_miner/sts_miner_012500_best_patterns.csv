@@ -1,0 +1,48 @@
+sequence,length,sequence_index,tail_event_count,last_density_ratio
+Coffee Shop -> Office,2,748.0403229004628,50,748.0403229004628
+Coffee Shop -> Office -> Deli / Bodega,3,748.0403229004628,2,1570.8922327819957
+Coffee Shop -> Office -> Deli / Bodega -> Park,4,748.0403229004628,1,15365.962122888957
+Coffee Shop -> Office -> Park,3,748.0403229004628,2,1229.2769698311165
+Coffee Shop -> Office -> Train Station,3,748.0403229004628,2,935.9814216184773
+Coffee Shop -> Office -> Train Station -> Neighborhood,4,748.0403229004628,1,17630.10192488635
+Coffee Shop -> Office -> Train Station -> Neighborhood -> Office,5,748.0403229004628,1,12428.977672807689
+Coffee Shop -> Office -> Neighborhood,3,705.2040769954539,1,705.2040769954539
+Coffee Shop -> Office -> Neighborhood -> Office,4,705.2040769954539,1,12428.977672807689
+Other Great Outdoors -> Bus Station,2,582.8511410094764,10,582.8511410094764
+Other Great Outdoors -> Bus Station -> Home (private),3,582.8511410094764,2,2038.3241067046338
+Deli / Bodega -> Office,2,571.134641420047,21,571.134641420047
+Deli / Bodega -> Office -> Coffee Shop,3,571.134641420047,1,989.1668738720406
+Deli / Bodega -> Office -> Coffee Shop -> Office,4,571.134641420047,2,24857.955345615377
+Coffee Shop -> Deli / Bodega,2,545.4486919381931,11,545.4486919381931
+Coffee Shop -> Deli / Bodega -> Office,3,545.4486919381931,2,2259.8141223286707
+Coffee Shop -> Deli / Bodega -> Park,3,545.4486919381931,1,2793.8112950707196
+Office -> Deli / Bodega,2,489.5439783600403,18,489.5439783600403
+Office -> Deli / Bodega -> Coffee Shop,3,489.5439783600403,1,1154.0280195173807
+Office -> Deli / Bodega -> Office,3,489.5439783600403,2,1380.9975192008544
+Office -> Deli / Bodega -> Park,3,489.5439783600403,1,1707.32912476544
+Subway -> Bus Station,2,488.5918318551249,15,488.5918318551249
+Office -> Coffee Shop,2,474.7178972252937,31,474.7178972252937
+Office -> Coffee Shop -> Deli / Bodega,3,474.7178972252937,1,1266.8485748241903
+Office -> Coffee Shop -> Office,3,474.7178972252937,5,2004.6738181947885
+Office -> Coffee Shop -> Park,3,474.7178972252937,1,991.352395025094
+Other Great Outdoors -> Subway,2,439.8767760536405,14,439.8767760536405
+Other Great Outdoors -> Park,2,435.142290205705,8,435.142290205705
+Park -> Other Great Outdoors,2,435.1422902057049,7,435.1422902057049
+Park -> Other Great Outdoors -> Bar,3,435.1422902057049,1,1738.2512115771724
+Coffee Shop -> Office -> Food & Drink Shop,3,434.56280289429304,1,434.56280289429304
+Coffee Shop -> Office -> Coffee Shop,3,415.450087026257,1,415.450087026257
+Coffee Shop -> Office -> Coffee Shop -> Office,4,415.450087026257,1,12428.977672807689
+Food & Drink Shop -> Coffee Shop,2,402.37296564286396,16,402.37296564286396
+Food & Drink Shop -> Coffee Shop -> Food & Drink Shop,3,402.37296564286396,1,1358.0087590446658
+Food & Drink Shop -> Coffee Shop -> Office,3,402.37296564286396,1,776.8111045504805
+Food & Drink Shop -> Coffee Shop -> Office -> Food & Drink Shop,4,402.37296564286396,1,21728.140144714653
+Park -> Food & Drink Shop,2,372.0571942588125,10,372.0571942588125
+Park -> Food & Drink Shop -> Office,3,372.0571942588125,1,1242.8977672807687
+Park -> Food & Drink Shop -> Park,3,372.0571942588125,1,3073.1924245777914
+Park -> Food & Drink Shop -> Subway,3,372.0571942588125,2,5325.650967220861
+Subway -> Park,2,364.7706141932096,12,364.7706141932096
+Subway -> Park -> Bar,3,364.7706141932096,1,1013.979873420017
+Deli / Bodega -> Coffee Shop,2,363.6324612921287,8,363.6324612921287
+Deli / Bodega -> Coffee Shop -> Office,3,363.6324612921287,2,3107.244418201922
+Train Station -> Deli / Bodega,2,358.4173933987605,7,358.4173933987605
+Train Station -> Deli / Bodega -> Office,3,358.4173933987605,1,1775.568238972527

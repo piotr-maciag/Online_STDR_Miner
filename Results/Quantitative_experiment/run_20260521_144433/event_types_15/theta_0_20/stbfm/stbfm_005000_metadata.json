@@ -1,0 +1,19 @@
+{
+  "algorithm": "stbfm",
+  "online_theta": 0.2,
+  "event_count": 5000,
+  "target_pattern_count": 150,
+  "pattern_count": 140,
+  "absolute_pattern_count_difference": 10,
+  "relative_pattern_count_difference": 0.06666666666666667,
+  "within_tolerance": true,
+  "tolerance_patterns": 15,
+  "spatial_radius": 250.0,
+  "temporal_window": 30.0,
+  "threshold": 0.00390625,
+  "mining_seconds": 0.26069874999666354,
+  "attempt_count": 20,
+  "patterns_path": "Results/Quantitative_experiment/run_20260521_144433/event_types_15/theta_0_20/stbfm/stbfm_005000_best_patterns.csv",
+  "metadata_path": "Results/Quantitative_experiment/run_20260521_144433/event_types_15/theta_0_20/stbfm/stbfm_005000_metadata.json",
+  "attempts_path": "Results/Quantitative_experiment/run_20260521_144433/event_types_15/theta_0_20/stbfm/stbfm_005000_attempts.csv"
+}

@@ -1,0 +1,77 @@
+sequence,length,sequence_index,tail_event_count,last_density_ratio
+Coffee Shop -> Office,2,655.8860774412615,111,655.8860774412615
+Coffee Shop -> Office -> Deli / Bodega,3,655.8860774412615,2,702.749120411482
+Coffee Shop -> Office -> Deli / Bodega -> Park,4,655.8860774412615,1,15799.836361122534
+Coffee Shop -> Office -> Park,3,655.8860774412615,3,854.0452087093261
+Other Great Outdoors -> Park,2,644.4802594721747,31,644.4802594721747
+Office -> Deli / Bodega,2,514.4350559782032,47,514.4350559782032
+Office -> Deli / Bodega -> Office,3,514.4350559782032,9,2428.5444761593685
+Office -> Deli / Bodega -> Park,3,514.4350559782032,3,2017.0003865262809
+Office -> Deli / Bodega -> Park -> Office,4,514.4350559782032,1,4227.466310351493
+Office -> Coffee Shop,2,504.9742366140686,82,504.9742366140686
+Office -> Coffee Shop -> Office,3,504.9742366140686,18,2783.941228768057
+Office -> Coffee Shop -> Office -> Food & Drink Shop,4,504.9742366140686,1,1262.0570028090485
+Office -> Coffee Shop -> Park,3,504.9742366140686,2,770.7237249328066
+Office -> Coffee Shop -> Park -> Office,4,504.9742366140686,1,6341.19946552724
+Office -> Coffee Shop -> Train Station,3,504.9742366140686,3,850.3816530894039
+Deli / Bodega -> Office,2,503.9363813664032,48,503.9363813664032
+Deli / Bodega -> Office -> Bus Station,3,503.9363813664032,1,684.0173058778657
+Deli / Bodega -> Office -> Coffee Shop,3,503.9363813664032,3,1347.6862708486099
+Deli / Bodega -> Office -> Coffee Shop -> Office,4,503.9363813664032,7,29592.264172460455
+Deli / Bodega -> Office -> Deli / Bodega,3,503.9363813664032,1,812.5536704757759
+Office -> Coffee Shop -> Deli / Bodega,3,475.64117296142985,1,475.64117296142985
+Office -> Deli / Bodega -> Coffee Shop,3,458.7868156080374,1,458.7868156080374
+Residential Building (Apartment / Condo) -> Deli / Bodega,2,452.6411162418249,12,452.6411162418249
+Coffee Shop -> Office -> Train Station,3,418.8065798998867,2,418.8065798998867
+Coffee Shop -> Office -> Train Station -> Neighborhood,4,418.8065798998867,1,17887.286267603413
+Coffee Shop -> Office -> Train Station -> Neighborhood -> Office,5,418.8065798998867,1,12682.39893105448
+Bus Station -> Park,2,418.39287924923786,12,418.39287924923786
+Bus Station -> Park -> Bus Station,3,418.39287924923786,2,5472.138447022926
+Bus Station -> Park -> Bus Station -> Park,4,418.39287924923786,3,94799.0181667352
+Coffee Shop -> Office -> Food & Drink Shop,3,409.3157846948265,2,409.3157846948265
+Deli / Bodega -> Park,2,392.38004208085766,15,392.38004208085766
+Deli / Bodega -> Park -> Neighborhood,3,392.38004208085766,1,2384.9715023471217
+Deli / Bodega -> Park -> Office,3,392.38004208085766,2,1690.9865241405973
+Coffee Shop -> Office -> Coffee Shop,3,388.5221681725722,2,388.5221681725722
+Coffee Shop -> Office -> Coffee Shop -> Office,4,388.5221681725722,1,6341.19946552724
+Coffee Shop -> Office -> Coffee Shop -> Train Station,4,388.5221681725722,1,11621.882592221855
+Train Station -> Subway,2,365.16844210533145,37,365.16844210533145
+Train Station -> Subway -> Train Station,3,365.16844210533145,9,5653.88882864847
+Train Station -> Subway -> Train Station -> Bar,4,365.16844210533145,1,1225.9982313002185
+Other Great Outdoors -> Subway,2,338.4388042905718,26,338.4388042905718
+Subway -> Bus Station,2,336.4019537104258,30,336.4019537104258
+Subway -> Bus Station -> Coffee Shop,3,336.4019537104258,1,1437.5320222385171
+Subway -> Bus Station -> Coffee Shop -> Park,4,336.4019537104258,1,31599.672722245068
+Subway -> Bus Station -> Park,3,336.4019537104258,1,2106.6448481496714
+Other Great Outdoors -> Bus Station,2,334.8153543111542,16,334.8153543111542
+Other Great Outdoors -> Bus Station -> Home (private),3,334.8153543111542,2,1214.3070110532833
+Coffee Shop -> Office -> Neighborhood,3,322.2934462631246,1,322.2934462631246
+Coffee Shop -> Office -> Neighborhood -> Office,4,322.2934462631246,1,12682.39893105448
+Park -> Other Great Outdoors,2,322.2401297360874,15,322.2401297360874
+Park -> Other Great Outdoors -> Bar,3,322.2401297360874,1,735.5989387801311
+Food & Drink Shop -> Park,2,319.9581133882094,21,319.9581133882094
+Food & Drink Shop -> Park -> Bar,3,319.9581133882094,1,525.4278134143793
+Food & Drink Shop -> Park -> Bus Station,3,319.9581133882094,1,1563.468127720836
+Food & Drink Shop -> Park -> Coffee Shop,3,319.9581133882094,2,2053.617174626453
+Food & Drink Shop -> Park -> Neighborhood,3,319.9581133882094,1,1703.551073105087
+Food & Drink Shop -> Park -> Other Great Outdoors,3,319.9581133882094,1,1429.9405757038876
+Park -> Food & Drink Shop,2,319.9581133882094,21,319.9581133882094
+Park -> Food & Drink Shop -> Bar,3,319.9581133882094,1,525.4278134143793
+Park -> Food & Drink Shop -> Coffee Shop,3,319.9581133882094,1,1026.8085873132266
+Park -> Food & Drink Shop -> Office,3,319.9581133882094,1,603.9237586216419
+Park -> Food & Drink Shop -> Park,3,319.9581133882094,1,1504.746320106908
+Park -> Food & Drink Shop -> Subway,3,319.9581133882094,3,3064.9955782505463
+Deli / Bodega -> Food & Drink Shop,2,319.69324740030527,17,319.69324740030527
+Deli / Bodega -> Food & Drink Shop -> Bus Station,3,319.69324740030527,1,1931.3429813022092
+Deli / Bodega -> Food & Drink Shop -> Coffee Shop,3,319.69324740030527,1,1268.410607857515
+Deli / Bodega -> Food & Drink Shop -> Gym / Fitness Center,3,319.69324740030527,1,1173.3603633228915
+Deli / Bodega -> Food & Drink Shop -> Gym / Fitness Center -> Deli / Bodega,4,319.69324740030527,1,39002.57618283724
+Coffee Shop -> Park,2,318.16604113930964,21,318.16604113930964
+Coffee Shop -> Park -> Coffee Shop,3,318.16604113930964,1,1026.8085873132266
+Coffee Shop -> Park -> Deli / Bodega,3,318.16604113930964,1,1857.2655325160592
+Coffee Shop -> Park -> Neighborhood,3,318.16604113930964,1,1703.551073105087
+Coffee Shop -> Park -> Office,3,318.16604113930964,1,603.9237586216419
+Park -> Bus Station,2,308.2894899731226,13,308.2894899731226
+Park -> Bus Station -> Coffee Shop,3,308.2894899731226,1,1658.6907948905966
+Park -> Bus Station -> Coffee Shop -> Park,4,308.2894899731226,1,31599.672722245068
+Park -> Bus Station -> Park,3,308.2894899731226,5,19445.952444458504

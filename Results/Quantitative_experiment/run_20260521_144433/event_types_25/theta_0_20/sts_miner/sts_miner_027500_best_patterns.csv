@@ -1,0 +1,30 @@
+sequence,length,sequence_index,tail_event_count,last_density_ratio
+Drugstore / Pharmacy -> Bank,2,1438.3789379029597,7,1438.3789379029597
+Drugstore / Pharmacy -> Bank -> American Restaurant,3,1438.3789379029597,1,6485.420011012166
+Drugstore / Pharmacy -> Bank -> Coffee Shop,3,1438.3789379029597,1,3086.831596304369
+Drugstore / Pharmacy -> Bank -> Subway,3,1438.3789379029597,1,2517.531898255965
+Drugstore / Pharmacy -> Bus Station,2,1230.5294159860923,19,1230.5294159860923
+Drugstore / Pharmacy -> Bus Station -> Coffee Shop,3,1230.5294159860923,2,2274.507492013746
+Drugstore / Pharmacy -> Bus Station -> Food & Drink Shop,3,1230.5294159860923,2,2457.5329668648883
+Drugstore / Pharmacy -> Bus Station -> Train Station,3,1230.5294159860923,1,1265.8054128501515
+Drugstore / Pharmacy -> Bus Station -> Train Station -> Food & Drink Shop,4,1230.5294159860923,1,23346.563185216437
+Deli / Bodega -> Bank,2,1166.9866854684392,10,1166.9866854684392
+Deli / Bodega -> Bank -> Office,3,1166.9866854684392,1,1307.4457957472703
+Deli / Bodega -> Bank -> Pizza Place,3,1166.9866854684392,1,7155.773962823065
+Bank -> Drugstore / Pharmacy,2,1078.7842034272198,6,1078.7842034272198
+Bank -> Drugstore / Pharmacy -> Bus Station,3,1078.7842034272198,2,11139.52944997936
+Bank -> Drugstore / Pharmacy -> Bus Station -> Coffee Shop,4,1078.7842034272198,2,21607.821174130582
+Bank -> Drugstore / Pharmacy -> Coffee Shop,3,1078.7842034272198,2,7202.607058043528
+Building -> Deli / Bodega,2,862.700758884978,15,862.700758884978
+Building -> Deli / Bodega -> Bank,3,862.700758884978,2,12370.058865965453
+Building -> Deli / Bodega -> Food & Drink Shop,3,862.700758884978,1,1556.4375456810958
+Building -> Deli / Bodega -> Gym / Fitness Center,3,862.700758884978,1,1340.674306834315
+Building -> Deli / Bodega -> Office,3,862.700758884978,1,871.6305304981803
+Bank -> Pizza Place,2,832.0667398631472,4,832.0667398631472
+Bank -> Coffee Shop,2,753.7612037487413,12,753.7612037487413
+Bank -> Coffee Shop -> Building,3,753.7612037487413,1,3810.261685075319
+Bank -> Coffee Shop -> Drugstore / Pharmacy,3,753.7612037487413,2,10308.382388304544
+Bank -> Coffee Shop -> Office,3,753.7612037487413,1,1089.5381631227253
+Bank -> Coffee Shop -> Office -> Coffee Shop,4,753.7612037487413,1,21607.821174130582
+Bank -> Coffee Shop -> Office -> Coffee Shop -> Train Station,5,753.7612037487413,1,24050.302844152877
+Bank -> Coffee Shop -> Subway,3,753.7612037487413,2,2937.120547965292

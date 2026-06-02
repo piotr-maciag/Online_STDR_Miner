@@ -1,0 +1,16 @@
+sequence,length,sequence_index,tail_event_count,last_density_ratio
+Coffee Shop -> Office,2,1093.216196921744,17,1093.216196921744
+Coffee Shop -> Office -> Coffee Shop,3,1093.216196921744,1,1446.903790043485
+Coffee Shop -> Office -> Coffee Shop -> Office,4,1093.216196921744,1,17491.459150747905
+Coffee Shop -> Office -> Neighborhood,3,1093.216196921744,1,2671.2069970033567
+Coffee Shop -> Office -> Neighborhood -> Office,4,1093.216196921744,1,17491.459150747905
+Coffee Shop -> Office -> Train Station,3,1093.216196921744,1,1693.936144441153
+Coffee Shop -> Office -> Train Station -> Neighborhood,4,1093.216196921744,1,45410.51894905707
+Coffee Shop -> Office -> Train Station -> Neighborhood -> Office,5,1093.216196921744,1,17491.459150747905
+Office -> Coffee Shop,2,850.2792642724678,14,850.2792642724678
+Office -> Coffee Shop -> Deli / Bodega,3,850.2792642724678,1,3804.5332739274454
+Office -> Coffee Shop -> Office,3,850.2792642724678,2,2498.7798786782723
+Office -> Deli / Bodega,2,789.0883827405071,6,789.0883827405071
+Coffee Shop -> Deli / Bodega,2,739.7703588192255,3,739.7703588192255
+Neighborhood -> Food & Drink Shop,2,715.126282662316,4,715.126282662316
+Subway -> Bus Station,2,694.4593518207299,5,694.4593518207299

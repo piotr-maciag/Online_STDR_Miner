@@ -1,0 +1,619 @@
+sequence,length,sequence_index,tail_event_count,last_density_ratio
+Coffee Shop -> Office,2,515.4258512934823,123,515.4258512934823
+Coffee Shop -> Office -> Park,3,515.4258512934823,4,535.6667052449133
+Deli / Bodega -> Office,2,405.04765989277126,53,405.04765989277126
+Deli / Bodega -> Office -> Coffee Shop,3,405.04765989277126,5,1016.149316099318
+Deli / Bodega -> Office -> Coffee Shop -> Office,4,405.04765989277126,9,11651.871016248722
+Deli / Bodega -> Office -> Coffee Shop -> Train Station,4,405.04765989277126,1,2409.5422843325623
+Deli / Bodega -> Office -> Deli / Bodega,3,405.04765989277126,2,751.2204677536095
+Deli / Bodega -> Office -> Deli / Bodega -> Office,4,405.04765989277126,1,3236.630837846867
+Office -> Coffee Shop,2,401.7886557327146,83,401.7886557327146
+Office -> Coffee Shop -> Office,3,401.7886557327146,27,2105.7598222136244
+Office -> Coffee Shop -> Office -> Food & Drink Shop,4,401.7886557327146,1,439.7357620438499
+Office -> Coffee Shop -> Train Station,3,401.7886557327146,4,580.6125986343524
+Office -> Deli / Bodega,2,397.54677730216446,50,397.54677730216446
+Office -> Deli / Bodega -> Coffee Shop,3,397.54677730216446,6,1292.5419300783326
+Office -> Deli / Bodega -> Coffee Shop -> Office,4,397.54677730216446,3,3236.630837846867
+Office -> Deli / Bodega -> Coffee Shop -> Office -> Coffee Shop,5,397.54677730216446,1,3590.39425021759
+Office -> Deli / Bodega -> Coffee Shop -> Train Station,4,397.54677730216446,1,2007.9519036104687
+Office -> Deli / Bodega -> Office,3,397.54677730216446,20,2589.304670277493
+Office -> Deli / Bodega -> Office -> Coffee Shop,4,397.54677730216446,4,2154.236550130554
+Office -> Deli / Bodega -> Office -> Coffee Shop -> Office,5,397.54677730216446,5,8091.577094617168
+Office -> Deli / Bodega -> Office -> Coffee Shop -> Train Station,5,397.54677730216446,1,3011.927855415703
+Office -> Deli / Bodega -> Office -> Deli / Bodega,4,397.54677730216446,2,1990.7342395470648
+Office -> Deli / Bodega -> Office -> Deli / Bodega -> Office,5,397.54677730216446,1,3236.630837846867
+Office -> Deli / Bodega -> Office -> Subway,4,397.54677730216446,1,433.83930523462544
+Office -> Deli / Bodega -> Office -> Subway -> Train Station,5,397.54677730216446,1,12047.711421662812
+Office -> Deli / Bodega -> Park,3,397.54677730216446,3,988.305071176865
+Office -> Coffee Shop -> Park,3,396.9096671393032,2,396.9096671393032
+Office -> Coffee Shop -> Park -> Office,4,396.9096671393032,1,3236.630837846867
+Coffee Shop -> Office -> Train Station,3,391.79549338740856,4,391.79549338740856
+Coffee Shop -> Office -> Train Station -> Neighborhood,4,391.79549338740856,1,4886.2447347244515
+Coffee Shop -> Office -> Train Station -> Neighborhood -> Office,5,391.79549338740856,1,6473.261675693734
+Deli / Bodega -> Office -> Neighborhood,3,368.7731875263737,1,368.7731875263737
+Deli / Bodega -> Office -> Neighborhood -> Office,4,368.7731875263737,1,6473.261675693734
+Other Great Outdoors -> Park,2,352.6512296795237,23,352.6512296795237
+Other Great Outdoors -> Park -> Other Great Outdoors,3,352.6512296795237,2,1332.663886071533
+Coffee Shop -> Office -> Coffee Shop,3,350.28236587488686,4,350.28236587488686
+Coffee Shop -> Office -> Coffee Shop -> Office,4,350.28236587488686,1,1618.3154189234335
+Coffee Shop -> Office -> Coffee Shop -> Train Station,4,350.28236587488686,1,3011.927855415703
+Coffee Shop -> Office -> Deli / Bodega,3,323.69662431659594,2,323.69662431659594
+Coffee Shop -> Office -> Deli / Bodega -> Office,4,323.69662431659594,2,6473.261675693734
+Coffee Shop -> Office -> Deli / Bodega -> Park,4,323.69662431659594,1,8235.875593140541
+Deli / Bodega -> Office -> Bus Station,3,318.1075876699533,1,318.1075876699533
+Park -> Food & Drink Shop,2,307.35126608817507,24,307.35126608817507
+Park -> Food & Drink Shop -> Coffee Shop,3,307.35126608817507,1,448.79928127719876
+Park -> Food & Drink Shop -> Office,3,307.35126608817507,2,539.4384729744778
+Park -> Food & Drink Shop -> Park,3,307.35126608817507,1,686.3229660950451
+Park -> Food & Drink Shop -> Subway,3,307.35126608817507,3,1446.1310174487517
+Food & Drink Shop -> Park,2,295.96788586268707,23,295.96788586268707
+Food & Drink Shop -> Park -> Bar,3,295.96788586268707,3,765.8490514112383
+Food & Drink Shop -> Park -> Coffee Shop,3,295.96788586268707,2,936.6245870132844
+Food & Drink Shop -> Park -> Food & Drink Shop,3,295.96788586268707,1,1032.4230934942561
+Food & Drink Shop -> Park -> Food & Drink Shop -> Bar,4,295.96788586268707,1,5871.509394152827
+Food & Drink Shop -> Park -> Neighborhood,3,295.96788586268707,1,849.7816929955567
+Food & Drink Shop -> Park -> Other Great Outdoors,3,295.96788586268707,1,666.3319430357665
+Food & Drink Shop -> Park -> Subway,3,295.96788586268707,1,377.25156976923955
+Deli / Bodega -> Park,2,286.2992674324638,15,286.2992674324638
+Deli / Bodega -> Park -> Office,3,286.2992674324638,3,1294.6523351387466
+Food & Drink Shop -> Park -> Office,3,281.44615981277104,1,281.44615981277104
+Deli / Bodega -> Coffee Shop,2,274.5840330409745,21,274.5840330409745
+Deli / Bodega -> Coffee Shop -> Neighborhood,3,274.5840330409745,1,930.7132828046574
+Deli / Bodega -> Coffee Shop -> Neighborhood -> Office,4,274.5840330409745,2,12946.523351387468
+Deli / Bodega -> Coffee Shop -> Office,3,274.5840330409745,10,3082.505559854159
+Deli / Bodega -> Coffee Shop -> Office -> Coffee Shop,4,274.5840330409745,1,1077.118275065277
+Deli / Bodega -> Coffee Shop -> Office -> Coffee Shop -> Train Station,5,274.5840330409745,1,12047.711421662812
+Deli / Bodega -> Coffee Shop -> Train Station,3,274.5840330409745,1,573.7005438887054
+Other Great Outdoors -> Bus Station,2,255.67790944748253,17,255.67790944748253
+Other Great Outdoors -> Bus Station -> Home (private),3,255.67790944748253,2,600.2912869648725
+Coffee Shop -> Deli / Bodega,2,249.6218482190677,19,249.6218482190677
+Coffee Shop -> Deli / Bodega -> Bar,3,249.6218482190677,1,309.02681021856984
+Coffee Shop -> Deli / Bodega -> Coffee Shop,3,249.6218482190677,1,566.9043552975143
+Coffee Shop -> Deli / Bodega -> Office,3,249.6218482190677,5,1703.4899146562457
+Coffee Shop -> Deli / Bodega -> Park,3,249.6218482190677,2,1733.8685459243247
+Park -> Food & Drink Shop -> Bar,3,244.64622475636776,1,244.64622475636776
+Coffee Shop -> Office -> Gym / Fitness Center,3,243.33639963869535,3,243.33639963869535
+Coffee Shop -> Office -> Gym / Fitness Center -> Office,4,243.33639963869535,1,2157.753891897911
+Train Station -> Coffee Shop,2,241.70957084213794,23,241.70957084213794
+Train Station -> Coffee Shop -> Office,3,241.70957084213794,3,844.3384794383131
+Train Station -> Coffee Shop -> Office -> Train Station,4,241.70957084213794,1,4015.9038072209373
+Train Station -> Coffee Shop -> Train Station,3,241.70957084213794,6,3142.8812404337773
+Office -> Coffee Shop -> Deli / Bodega,3,239.84749874061023,1,239.84749874061023
+Office -> Coffee Shop -> Neighborhood,3,235.48167396262414,1,235.48167396262414
+Office -> Coffee Shop -> Neighborhood -> Office,4,235.48167396262414,2,12946.523351387468
+Park -> Other Great Outdoors,2,235.10081978634906,15,235.10081978634906
+Park -> Other Great Outdoors -> Bar,3,235.10081978634906,1,391.4339596101884
+Park -> Other Great Outdoors -> Park,3,235.10081978634906,1,1098.1167457520723
+Train Station -> Subway,2,231.2187040521146,30,231.2187040521146
+Train Station -> Subway -> Train Station,3,231.2187040521146,11,4417.494187943032
+Train Station -> Subway -> Train Station -> Bar,4,231.2187040521146,1,533.7735812866206
+Train Station -> Subway -> Train Station -> Bus Station,4,231.2187040521146,1,3065.4003902740956
+Park -> Deli / Bodega,2,229.03941394597106,11,229.03941394597106
+Park -> Deli / Bodega -> Office,3,229.03941394597106,2,1176.9566683079515
+Park -> Deli / Bodega -> Office -> Deli / Bodega,4,229.03941394597106,1,9953.671197735324
+Park -> Deli / Bodega -> Park,3,229.03941394597106,1,1497.431926025553
+Park -> Coffee Shop,2,227.19656808663564,21,227.19656808663564
+Park -> Coffee Shop -> Food & Drink Shop,3,227.19656808663564,1,565.3745511992355
+Park -> Coffee Shop -> Office,3,227.19656808663564,2,616.5011119708317
+Park -> Coffee Shop -> Park,3,227.19656808663564,3,2353.1073123258693
+Deli / Bodega -> Office -> Food & Drink Shop,3,224.01633160724427,1,224.01633160724427
+Food & Drink Shop -> Residential Building (Apartment / Condo),2,215.87028318516266,11,215.87028318516266
+Train Station -> Subway -> Office,3,215.77538918979113,1,215.77538918979113
+Food & Drink Shop -> Bus Station,2,209.72677169117864,16,209.72677169117864
+Food & Drink Shop -> Bus Station -> Residential Building (Apartment / Condo),3,209.72677169117864,1,1501.7514411967807
+Coffee Shop -> Park,2,206.5423346242142,19,206.5423346242142
+Coffee Shop -> Park -> Deli / Bodega,3,206.5423346242142,1,1047.754862919508
+Coffee Shop -> Park -> Deli / Bodega -> Park,4,206.5423346242142,1,16471.751186281082
+Coffee Shop -> Park -> Neighborhood,3,206.5423346242142,1,1028.683102047253
+Coffee Shop -> Park -> Neighborhood -> Park,4,206.5423346242142,1,16471.751186281082
+Coffee Shop -> Park -> Office,3,206.5423346242142,1,340.69798293124916
+Office -> Neighborhood,2,206.20173710969806,27,206.20173710969806
+Office -> Neighborhood -> Bar,3,206.20173710969806,1,217.46331089454912
+Office -> Neighborhood -> Coffee Shop,3,206.20173710969806,1,398.93269446862115
+Office -> Neighborhood -> Food & Drink Shop,3,206.20173710969806,1,439.7357620438499
+Office -> Neighborhood -> Food & Drink Shop -> Office,4,206.20173710969806,1,6473.261675693734
+Office -> Neighborhood -> Gym / Fitness Center,3,206.20173710969806,2,1108.5324872429455
+Office -> Neighborhood -> Office,3,206.20173710969806,6,1438.5025945986076
+Office -> Neighborhood -> Park,3,206.20173710969806,6,3660.3891525069075
+Office -> Neighborhood -> Park -> Deli / Bodega,4,206.20173710969806,1,3317.8903992451083
+Office -> Neighborhood -> Subway,3,206.20173710969806,2,642.7248966438897
+Office -> Neighborhood -> Subway -> Gym / Fitness Center,4,206.20173710969806,1,4988.396192593254
+Office -> Neighborhood -> Subway -> Park,4,206.20173710969806,1,8235.875593140541
+Subway -> Bus Station,2,204.36002601827303,24,204.36002601827303
+Train Station -> Subway -> Bar,3,195.7169798050942,1,195.7169798050942
+Food & Drink Shop -> Coffee Shop,2,193.53887457980102,25,193.53887457980102
+Food & Drink Shop -> Coffee Shop -> Food & Drink Shop,3,193.53887457980102,1,474.9146230073578
+Food & Drink Shop -> Coffee Shop -> Office,3,193.53887457980102,1,258.93046702774933
+Food & Drink Shop -> Coffee Shop -> Office -> Food & Drink Shop,4,193.53887457980102,1,11872.865575183947
+American Restaurant -> Office,2,191.67127438124112,22,191.67127438124112
+American Restaurant -> Office -> Coffee Shop,3,191.67127438124112,6,2937.595295632574
+American Restaurant -> Office -> Gym / Fitness Center,3,191.67127438124112,1,453.49056296302314
+Subway -> Park,2,191.33852388104285,23,191.33852388104285
+Subway -> Park -> Bar,3,191.33852388104285,2,510.5660342741588
+Subway -> Park -> Bar -> Office,4,191.33852388104285,1,3236.630837846867
+Subway -> Park -> Deli / Bodega,3,191.33852388104285,1,865.5366258900282
+Subway -> Park -> Neighborhood,3,191.33852388104285,1,849.7816929955567
+Subway -> Park -> Neighborhood -> Office,4,191.33852388104285,1,6473.261675693734
+Subway -> Park -> Office,3,191.33852388104285,3,844.3384794383131
+American Restaurant -> Coffee Shop,2,188.45945593335938,13,188.45945593335938
+American Restaurant -> Coffee Shop -> Gym / Fitness Center,3,188.45945593335938,1,767.4455680912698
+American Restaurant -> Coffee Shop -> Office,3,188.45945593335938,1,497.9432058225949
+American Restaurant -> Coffee Shop -> Office -> Gym / Fitness Center,4,188.45945593335938,1,9976.792385186509
+American Restaurant -> Coffee Shop -> Train Station,3,188.45945593335938,2,1853.4940648712018
+Deli / Bodega -> Office -> Gym / Fitness Center,3,188.24136575823601,1,188.24136575823601
+Deli / Bodega -> Office -> Gym / Fitness Center -> Food & Drink Shop,4,188.24136575823601,1,11872.865575183947
+Park -> Neighborhood,2,187.39193613516593,8,187.39193613516593
+Park -> Neighborhood -> Food & Drink Shop,3,187.39193613516593,1,1484.1081968979934
+Park -> Neighborhood -> Food & Drink Shop -> Office,4,187.39193613516593,1,6473.261675693734
+Park -> Neighborhood -> Office,3,187.39193613516593,3,2427.47312838515
+Park -> Neighborhood -> Park,3,187.39193613516593,1,2058.9688982851353
+Park -> Neighborhood -> Subway,3,187.39193613516593,1,1084.5982630865637
+Park -> Office,2,186.19161099790222,27,186.19161099790222
+Park -> Office -> Deli / Bodega,3,186.19161099790222,3,2211.9269328300725
+Park -> Office -> Deli / Bodega -> Office,4,186.19161099790222,1,2157.753891897911
+Park -> Office -> Deli / Bodega -> Office -> Deli / Bodega,5,186.19161099790222,1,19907.34239547065
+Park -> Office -> Food & Drink Shop,3,186.19161099790222,1,439.7357620438499
+Park -> Office -> Food & Drink Shop -> Office,4,186.19161099790222,1,6473.261675693734
+Park -> Office -> Neighborhood,3,186.19161099790222,2,1447.7762176961337
+Park -> Office -> Neighborhood -> Food & Drink Shop,4,186.19161099790222,1,5936.4327875919735
+Park -> Office -> Neighborhood -> Food & Drink Shop -> Office,5,186.19161099790222,1,6473.261675693734
+Park -> Office -> Neighborhood -> Office,4,186.19161099790222,1,3236.630837846867
+Park -> Office -> Park,3,186.19161099790222,2,1220.1297175023026
+Park -> Office -> Park -> Deli / Bodega,4,186.19161099790222,1,9953.671197735324
+Park -> Office -> Park -> Neighborhood,4,186.19161099790222,1,9772.489469448903
+Park -> Office -> Subway,3,186.19161099790222,1,321.36244832194484
+Park -> Office -> Subway -> Food & Drink Shop,4,186.19161099790222,1,11872.865575183947
+Park -> Office -> Subway -> Food & Drink Shop -> Office,5,186.19161099790222,1,6473.261675693734
+Park -> Office -> Subway -> Neighborhood,4,186.19161099790222,1,19544.978938897806
+Park -> Office -> Subway -> Neighborhood -> Food & Drink Shop,5,186.19161099790222,1,11872.865575183947
+Park -> Office -> Subway -> Neighborhood -> Office,5,186.19161099790222,1,6473.261675693734
+Park -> Office -> Subway -> Office,4,186.19161099790222,1,6473.261675693734
+Train Station -> Deli / Bodega,2,181.48348607371557,13,181.48348607371557
+Train Station -> Deli / Bodega -> American Restaurant,3,181.48348607371557,1,1778.655811915433
+Train Station -> Deli / Bodega -> American Restaurant -> Train Station,4,181.48348607371557,2,24095.422843325625
+Train Station -> Deli / Bodega -> Food & Drink Shop,3,181.48348607371557,1,913.2973519372266
+Train Station -> Deli / Bodega -> Home (private),3,181.48348607371557,8,3139.9851933547175
+Train Station -> Deli / Bodega -> Office,3,181.48348607371557,1,497.9432058225949
+Train Station -> Deli / Bodega -> Train Station,3,181.48348607371557,2,1853.4940648712018
+Coffee Shop -> Train Station,2,181.28217813160344,23,181.28217813160344
+Coffee Shop -> Train Station -> Coffee Shop,3,181.28217813160344,1,468.3122935066422
+Coffee Shop -> Train Station -> Subway,3,181.28217813160344,1,377.25156976923955
+Coffee Shop -> Train Station -> Subway -> Train Station,4,181.28217813160344,1,12047.711421662812
+Subway -> Deli / Bodega,2,180.9758399588241,18,180.9758399588241
+Subway -> Deli / Bodega -> Bar,3,180.9758399588241,1,326.1949663418237
+Subway -> Deli / Bodega -> Coffee Shop,3,180.9758399588241,4,2393.596166811727
+Subway -> Deli / Bodega -> Coffee Shop -> Neighborhood,4,180.9758399588241,1,4886.2447347244515
+Subway -> Deli / Bodega -> Coffee Shop -> Neighborhood -> Office,5,180.9758399588241,2,12946.523351387468
+Subway -> Deli / Bodega -> Coffee Shop -> Office,4,180.9758399588241,9,14564.838770310902
+Subway -> Deli / Bodega -> Office,3,180.9758399588241,11,3955.8821351461706
+Subway -> Deli / Bodega -> Office -> Coffee Shop,4,180.9758399588241,3,2937.595295632574
+Subway -> Deli / Bodega -> Office -> Coffee Shop -> Office,5,180.9758399588241,9,19419.7850270812
+Subway -> Deli / Bodega -> Office -> Subway,4,180.9758399588241,1,788.7987367902282
+Subway -> Deli / Bodega -> Office -> Subway -> Train Station,5,180.9758399588241,1,12047.711421662812
+Gym / Fitness Center -> Office,2,180.43934984512148,48,180.43934984512148
+Gym / Fitness Center -> Office -> Coffee Shop,3,180.43934984512148,1,224.39964063859938
+Gym / Fitness Center -> Office -> Deli / Bodega,3,180.43934984512148,4,1658.9451996225541
+Gym / Fitness Center -> Office -> Deli / Bodega -> Park,4,180.43934984512148,2,8235.875593140541
+Gym / Fitness Center -> Office -> Gym / Fitness Center,3,180.43934984512148,2,415.6996827161045
+Gym / Fitness Center -> Office -> Neighborhood,3,180.43934984512148,3,1221.5611836811129
+Gym / Fitness Center -> Office -> Neighborhood -> Gym / Fitness Center,4,180.43934984512148,1,3325.597461728836
+Gym / Fitness Center -> Office -> Neighborhood -> Park,4,180.43934984512148,2,10981.167457520722
+Gym / Fitness Center -> Office -> Neighborhood -> Subway,4,180.43934984512148,1,2892.2620348975033
+Gym / Fitness Center -> Office -> Neighborhood -> Subway -> Gym / Fitness Center,5,180.43934984512148,1,9976.792385186509
+Gym / Fitness Center -> Office -> Park,3,180.43934984512148,1,343.16148304752255
+Gym / Fitness Center -> Office -> Park -> Deli / Bodega,4,180.43934984512148,2,39814.6847909413
+Gym / Fitness Center -> Office -> Subway,3,180.43934984512148,3,542.2991315432819
+Gym / Fitness Center -> Office -> Subway -> Gym / Fitness Center,4,180.43934984512148,1,3325.597461728836
+Gym / Fitness Center -> Office -> Subway -> Office,4,180.43934984512148,1,2157.753891897911
+Subway -> Office,2,179.81282432482593,55,179.81282432482593
+Subway -> Office -> Food & Drink Shop,3,179.81282432482593,2,431.74056637032527
+Subway -> Office -> Gym / Fitness Center,3,179.81282432482593,1,181.39622518520923
+Subway -> Office -> Neighborhood,3,179.81282432482593,1,355.3632534345055
+Other Great Outdoors -> Deli / Bodega,2,177.58556998635729,10,177.58556998635729
+Other Great Outdoors -> Deli / Bodega -> Home (private),3,177.58556998635729,2,1020.4951878402832
+Coffee Shop -> American Restaurant,2,173.96257470771636,12,173.96257470771636
+Coffee Shop -> American Restaurant -> Coffee Shop,3,173.96257470771636,1,897.5985625543975
+Neighborhood -> Office,2,169.37999834010907,21,169.37999834010907
+Neighborhood -> Office -> Gym / Fitness Center,3,169.37999834010907,1,475.08535167554805
+Neighborhood -> Park,2,168.65274252164934,9,168.65274252164934
+Neighborhood -> Park -> Coffee Shop,3,168.65274252164934,1,1196.7980834058635
+Neighborhood -> Park -> Deli / Bodega,3,168.65274252164934,1,2211.9269328300725
+Neighborhood -> Park -> Subway,3,168.65274252164934,1,964.0873449658345
+Residential Building (Apartment / Condo) -> Deli / Bodega,2,167.054621500453,6,167.054621500453
+Bar -> American Restaurant,2,165.95114034617677,19,165.95114034617677
+Bar -> American Restaurant -> Bar,3,165.95114034617677,1,309.02681021856984
+Bar -> American Restaurant -> Coffee Shop,3,165.95114034617677,1,566.9043552975143
+Deli / Bodega -> Office -> Subway,3,163.7129453715568,1,163.7129453715568
+Deli / Bodega -> Office -> Subway -> Train Station,4,163.7129453715568,1,12047.711421662812
+Other Great Outdoors -> Home (private),2,159.31013191083815,35,159.31013191083815
+Coffee Shop -> Office -> Neighborhood,3,158.9022677959171,1,158.9022677959171
+Coffee Shop -> Office -> Neighborhood -> Office,4,158.9022677959171,1,6473.261675693734
+American Restaurant -> Bar,2,158.04870509159693,19,158.04870509159693
+Subway -> Food & Drink Shop,2,155.90631563372858,26,155.90631563372858
+Subway -> Food & Drink Shop -> Coffee Shop,3,155.90631563372858,1,414.27625964049116
+Subway -> Food & Drink Shop -> Coffee Shop -> Food & Drink Shop,4,155.90631563372858,1,11872.865575183947
+Subway -> Food & Drink Shop -> Coffee Shop -> Office,4,155.90631563372858,1,6473.261675693734
+Subway -> Food & Drink Shop -> Coffee Shop -> Office -> Food & Drink Shop,5,155.90631563372858,1,11872.865575183947
+Subway -> Food & Drink Shop -> Office,3,155.90631563372858,1,248.97160291129745
+Other Great Outdoors -> Subway,2,154.8043908062892,19,154.8043908062892
+Coffee Shop -> Subway,2,152.31975606983718,28,152.31975606983718
+Coffee Shop -> Subway -> Bar,3,152.31975606983718,1,209.69676407688667
+Coffee Shop -> Subway -> Coffee Shop,3,152.31975606983718,1,384.685098237599
+Coffee Shop -> Subway -> Gym / Fitness Center,3,152.31975606983718,1,356.31401375666104
+Coffee Shop -> Subway -> Gym / Fitness Center -> Office,4,152.31975606983718,1,6473.261675693734
+Coffee Shop -> Subway -> Office,3,152.31975606983718,1,231.18791698906193
+Subway -> Train Station,2,152.11756845533856,25,152.11756845533856
+Subway -> Train Station -> Bar,3,152.11756845533856,1,234.86037576611307
+Subway -> Train Station -> Bus Station,3,152.11756845533856,1,2023.1642575809033
+Subway -> Train Station -> Food & Drink Shop,3,152.11756845533856,1,474.9146230073578
+Subway -> Train Station -> Subway,3,152.11756845533856,1,347.07144418770037
+Subway -> Train Station -> Subway -> Train Station,4,152.11756845533856,2,24095.422843325625
+Subway -> Train Station -> Subway -> Train Station -> Bus Station,5,152.11756845533856,1,16859.702146507527
+Office -> Park,2,148.95328879832178,21,148.95328879832178
+Office -> Park -> American Restaurant,3,148.95328879832178,1,1101.0726454714586
+Office -> Park -> Deli / Bodega,3,148.95328879832178,4,3791.8747419944093
+Office -> Park -> Food & Drink Shop,3,148.95328879832178,1,565.3745511992355
+Office -> Park -> Neighborhood,3,148.95328879832178,1,930.7132828046574
+Food & Drink Shop -> Office,2,147.62794422798424,33,147.62794422798424
+Food & Drink Shop -> Office -> Food & Drink Shop,3,147.62794422798424,1,359.7838053086044
+Food & Drink Shop -> Office -> Gym / Fitness Center,3,147.62794422798424,2,604.6540839506974
+Food & Drink Shop -> Office -> Train Station,3,147.62794422798424,2,730.164328585625
+Food & Drink Shop -> Office -> Train Station -> Gym / Fitness Center,4,147.62794422798424,1,9976.792385186509
+Food & Drink Shop -> Subway,2,143.91352212344177,23,143.91352212344177
+Food & Drink Shop -> Subway -> Food & Drink Shop,3,143.91352212344177,1,516.2115467471281
+Food & Drink Shop -> Subway -> Gym / Fitness Center,3,143.91352212344177,2,867.5471639292616
+Food & Drink Shop -> Subway -> Gym / Fitness Center -> Office,4,143.91352212344177,1,3236.630837846867
+Food & Drink Shop -> Subway -> Gym / Fitness Center -> Park,4,143.91352212344177,1,8235.875593140541
+Food & Drink Shop -> Subway -> Gym / Fitness Center -> Park -> Bar,5,143.91352212344177,1,5871.509394152827
+Food & Drink Shop -> Subway -> Office,3,143.91352212344177,1,281.44615981277104
+Food & Drink Shop -> Subway -> Park,3,143.91352212344177,1,716.1630950556993
+Food & Drink Shop -> Subway -> Park -> Bar,4,143.91352212344177,1,5871.509394152827
+Office -> Coffee Shop -> Food & Drink Shop,3,143.0465731949873,1,143.0465731949873
+Train Station -> Office,2,140.72307990638552,23,140.72307990638552
+Train Station -> Office -> Coffee Shop,3,140.72307990638552,1,468.3122935066422
+Train Station -> Office -> Train Station,3,140.72307990638552,6,3142.8812404337773
+Train Station -> Office -> Train Station -> Coffee Shop,4,140.72307990638552,3,8975.985625543975
+Train Station -> Office -> Train Station -> Coffee Shop -> Office,5,140.72307990638552,1,2157.753891897911
+Train Station -> Office -> Train Station -> Neighborhood,4,140.72307990638552,2,6514.992979632601
+Train Station -> Office -> Train Station -> Neighborhood -> Bar,5,140.72307990638552,1,2935.7546970764133
+Train Station -> Office -> Train Station -> Neighborhood -> Coffee Shop,5,140.72307990638552,1,5385.591375326386
+Deli / Bodega -> Residential Building (Apartment / Condo),2,139.21218458371084,5,139.21218458371084
+Coffee Shop -> Gym / Fitness Center,2,137.6109294508484,22,137.6109294508484
+Coffee Shop -> Gym / Fitness Center -> Office,3,137.6109294508484,2,588.4783341539758
+Deli / Bodega -> Food & Drink Shop,2,137.57665788162163,10,137.57665788162163
+Deli / Bodega -> Food & Drink Shop -> Coffee Shop,3,137.57665788162163,1,1077.118275065277
+Deli / Bodega -> Food & Drink Shop -> Gym / Fitness Center,3,137.57665788162163,1,997.6792385186508
+Deli / Bodega -> Food & Drink Shop -> Gym / Fitness Center -> Deli / Bodega,4,137.57665788162163,1,19907.34239547065
+Train Station -> Neighborhood,2,137.06156338638013,9,137.06156338638013
+Train Station -> Neighborhood -> Bar,3,137.06156338638013,2,1304.7798653672949
+Train Station -> Neighborhood -> Coffee Shop,3,137.06156338638013,1,1196.7980834058635
+Train Station -> Neighborhood -> Office,3,137.06156338638013,2,1438.5025945986076
+Train Station -> Neighborhood -> Train Station,3,137.06156338638013,1,1338.6346024069792
+Residential Building (Apartment / Condo) -> Home (private),2,135.59026971304462,19,135.59026971304462
+Residential Building (Apartment / Condo) -> Home (private) -> Residential Building (Apartment / Condo),3,135.59026971304462,1,1264.6327925867627
+Neighborhood -> Bus Station,2,134.26383961951387,7,134.26383961951387
+Neighborhood -> Bus Station -> Food & Drink Shop,3,134.26383961951387,1,1696.1236535977066
+Office -> Food & Drink Shop,2,134.20722202544025,28,134.20722202544025
+Office -> Food & Drink Shop -> Gym / Fitness Center,3,134.20722202544025,1,356.31401375666104
+Office -> Food & Drink Shop -> Gym / Fitness Center -> Deli / Bodega,4,134.20722202544025,1,19907.34239547065
+Office -> Food & Drink Shop -> Office,3,134.20722202544025,1,231.18791698906193
+Office -> Food & Drink Shop -> Park,3,134.20722202544025,1,588.2768280814673
+Coffee Shop -> Food & Drink Shop,2,133.98845163216993,18,133.98845163216993
+Coffee Shop -> Food & Drink Shop -> Bus Station,3,133.98845163216993,3,2809.950357751254
+Coffee Shop -> Food & Drink Shop -> Coffee Shop,3,133.98845163216993,1,598.3990417029318
+Coffee Shop -> Food & Drink Shop -> Gym / Fitness Center,3,133.98845163216993,2,1108.5324872429455
+Coffee Shop -> Food & Drink Shop -> Office,3,133.98845163216993,2,719.2512972993038
+Coffee Shop -> Food & Drink Shop -> Office -> Gym / Fitness Center,4,133.98845163216993,1,4988.396192593254
+Coffee Shop -> Food & Drink Shop -> Subway,3,133.98845163216993,2,964.0873449658345
+Coffee Shop -> Food & Drink Shop -> Subway -> Food & Drink Shop,4,133.98845163216993,1,5936.4327875919735
+Coffee Shop -> Food & Drink Shop -> Subway -> Gym / Fitness Center,4,133.98845163216993,1,4988.396192593254
+Coffee Shop -> Food & Drink Shop -> Subway -> Gym / Fitness Center -> Office,5,133.98845163216993,1,6473.261675693734
+Park -> Gym / Fitness Center,2,133.91667631122831,12,133.91667631122831
+Park -> Gym / Fitness Center -> Bar,3,133.91667631122831,1,489.2924495127355
+Park -> Gym / Fitness Center -> Park,3,133.91667631122831,3,4117.937796570271
+Park -> Gym / Fitness Center -> Park -> Bar,4,133.91667631122831,1,1957.169798050942
+Office -> Subway,2,130.77296314532796,37,130.77296314532796
+Office -> Subway -> American Restaurant,3,130.77296314532796,1,624.9331231054224
+Office -> Subway -> Deli / Bodega,3,130.77296314532796,1,538.0362809586661
+Office -> Subway -> Deli / Bodega -> Coffee Shop,4,130.77296314532796,1,10771.182750652772
+Office -> Subway -> Deli / Bodega -> Coffee Shop -> Office,5,130.77296314532796,2,12946.523351387468
+Office -> Subway -> Deli / Bodega -> Office,4,130.77296314532796,3,19419.7850270812
+Office -> Subway -> Deli / Bodega -> Office -> Coffee Shop,5,130.77296314532796,1,3590.39425021759
+Office -> Subway -> Deli / Bodega -> Office -> Subway,5,130.77296314532796,1,2892.2620348975033
+Office -> Subway -> Food & Drink Shop,3,130.77296314532796,1,320.8882587887553
+Office -> Subway -> Food & Drink Shop -> Office,4,130.77296314532796,1,6473.261675693734
+Office -> Subway -> Gym / Fitness Center,3,130.77296314532796,1,269.6430374374732
+Office -> Subway -> Neighborhood,3,130.77296314532796,3,1584.728022072795
+Office -> Subway -> Neighborhood -> Food & Drink Shop,4,130.77296314532796,1,3957.621858394649
+Office -> Subway -> Neighborhood -> Food & Drink Shop -> Office,5,130.77296314532796,1,6473.261675693734
+Office -> Subway -> Neighborhood -> Office,4,130.77296314532796,2,4315.507783795822
+Office -> Subway -> Neighborhood -> Park,4,130.77296314532796,1,5490.583728760361
+Office -> Subway -> Office,3,130.77296314532796,4,699.8120730479712
+Office -> Subway -> Park,3,130.77296314532796,4,1780.7298579763333
+Office -> Subway -> Park -> Office,4,130.77296314532796,1,1618.3154189234335
+Office -> Subway -> Train Station,3,130.77296314532796,4,1302.455288828412
+Deli / Bodega -> Subway,2,130.70477330359515,13,130.70477330359515
+American Restaurant -> Subway,2,128.45847530500353,11,128.45847530500353
+Subway -> American Restaurant,2,128.45847530500353,11,128.45847530500353
+Subway -> American Restaurant -> Residential Building (Apartment / Condo),3,128.45847530500353,2,4368.731465299726
+Food & Drink Shop -> American Restaurant,2,127.83704522405326,6,127.83704522405326
+Food & Drink Shop -> American Restaurant -> Food & Drink Shop,3,127.83704522405326,1,1978.8109291973244
+Food & Drink Shop -> American Restaurant -> Food & Drink Shop -> American Restaurant,4,127.83704522405326,1,23122.525554900632
+Food & Drink Shop -> American Restaurant -> Gym / Fitness Center,3,127.83704522405326,1,1662.798730864418
+Food & Drink Shop -> American Restaurant -> Gym / Fitness Center -> Food & Drink Shop,4,127.83704522405326,1,11872.865575183947
+Food & Drink Shop -> American Restaurant -> Gym / Fitness Center -> Food & Drink Shop -> Gym / Fitness Center,5,127.83704522405326,1,9976.792385186509
+Bus Station -> Subway,2,127.72501626142068,15,127.72501626142068
+Bus Station -> Subway -> Bus Station,3,127.72501626142068,4,4495.920572402008
+Bus Station -> Subway -> Deli / Bodega,3,127.72501626142068,1,1327.1561596980432
+Bus Station -> Subway -> Deli / Bodega -> Coffee Shop,4,127.72501626142068,1,10771.182750652772
+Bus Station -> Subway -> Deli / Bodega -> Coffee Shop -> Office,5,127.72501626142068,4,25893.046702774936
+Bus Station -> Subway -> Deli / Bodega -> Office,4,127.72501626142068,2,12946.523351387468
+Bus Station -> Subway -> Deli / Bodega -> Office -> Coffee Shop,5,127.72501626142068,1,5385.591375326386
+Train Station -> Bar,2,127.64150856853972,25,127.64150856853972
+Train Station -> Bar -> Office,3,127.64150856853972,1,258.93046702774933
+Train Station -> Bar -> Train Station,3,127.64150856853972,3,1445.7253705995377
+Park -> Subway,2,124.78599383546276,13,124.78599383546276
+Park -> Subway -> Food & Drink Shop,3,124.78599383546276,1,913.2973519372266
+Park -> Subway -> Food & Drink Shop -> Office,4,124.78599383546276,1,6473.261675693734
+Park -> Subway -> Neighborhood,3,124.78599383546276,1,1503.459918376754
+Park -> Subway -> Neighborhood -> Food & Drink Shop,4,124.78599383546276,1,11872.865575183947
+Park -> Subway -> Neighborhood -> Food & Drink Shop -> Office,5,124.78599383546276,1,6473.261675693734
+Park -> Subway -> Neighborhood -> Office,4,124.78599383546276,1,6473.261675693734
+Park -> Subway -> Office,3,124.78599383546276,2,995.8864116451898
+Park -> Subway -> Park,3,124.78599383546276,2,2534.1155671201664
+Park -> Subway -> Park -> Bar,4,124.78599383546276,1,2935.7546970764133
+Park -> Subway -> Park -> Bar -> Office,5,124.78599383546276,1,6473.261675693734
+Park -> Subway -> Park -> Office,4,124.78599383546276,1,3236.630837846867
+Coffee Shop -> Neighborhood,2,122.53905290845017,9,122.53905290845017
+Coffee Shop -> Neighborhood -> Bus Station,3,122.53905290845017,1,1873.3002385008365
+Coffee Shop -> Neighborhood -> Office,3,122.53905290845017,4,2877.0051891972153
+Coffee Shop -> Neighborhood -> Subway,3,122.53905290845017,1,964.0873449658345
+Neighborhood -> Food & Drink Shop,2,121.5651765377196,9,121.5651765377196
+Neighborhood -> Food & Drink Shop -> Bar,3,121.5651765377196,1,652.3899326836474
+Neighborhood -> Food & Drink Shop -> Office,3,121.5651765377196,1,719.2512972993038
+Gym / Fitness Center -> American Restaurant,2,120.84943669808693,9,120.84943669808693
+Gym / Fitness Center -> American Restaurant -> Bar,3,120.84943669808693,1,652.3899326836474
+Gym / Fitness Center -> American Restaurant -> Coffee Shop,3,120.84943669808693,1,1196.7980834058635
+Gym / Fitness Center -> American Restaurant -> Gym / Fitness Center,3,120.84943669808693,1,1108.5324872429455
+Gym / Fitness Center -> American Restaurant -> Gym / Fitness Center -> Food & Drink Shop,4,120.84943669808693,1,11872.865575183947
+Gym / Fitness Center -> American Restaurant -> Gym / Fitness Center -> Food & Drink Shop -> Gym / Fitness Center,5,120.84943669808693,1,9976.792385186509
+Gym / Fitness Center -> American Restaurant -> Office,3,120.84943669808693,2,1438.5025945986076
+Gym / Fitness Center -> American Restaurant -> Office -> Coffee Shop,4,120.84943669808693,1,5385.591375326386
+Subway -> Neighborhood,2,118.45441781150184,12,118.45441781150184
+Subway -> Neighborhood -> Food & Drink Shop,3,118.45441781150184,1,989.4054645986622
+Subway -> Neighborhood -> Food & Drink Shop -> Office,4,118.45441781150184,1,6473.261675693734
+Subway -> Neighborhood -> Office,3,118.45441781150184,8,4315.507783795822
+Subway -> Neighborhood -> Office -> Gym / Fitness Center,4,118.45441781150184,1,1247.0990481483136
+Subway -> Neighborhood -> Park,3,118.45441781150184,1,1372.6459321900902
+Office -> Deli / Bodega -> Bar,3,117.43018788305653,1,117.43018788305653
+Office -> Gym / Fitness Center,2,116.5337467749743,27,116.5337467749743
+Office -> Gym / Fitness Center -> Coffee Shop,3,116.5337467749743,1,398.93269446862115
+Office -> Gym / Fitness Center -> Coffee Shop -> Neighborhood,4,116.5337467749743,1,19544.978938897806
+Office -> Gym / Fitness Center -> Coffee Shop -> Neighborhood -> Office,5,116.5337467749743,2,12946.523351387468
+Office -> Gym / Fitness Center -> Coffee Shop -> Office,4,116.5337467749743,2,12946.523351387468
+Office -> Gym / Fitness Center -> Deli / Bodega,3,116.5337467749743,2,1474.617955220048
+Office -> Gym / Fitness Center -> Deli / Bodega -> Office,4,116.5337467749743,1,3236.630837846867
+Office -> Gym / Fitness Center -> Food & Drink Shop,3,116.5337467749743,1,439.7357620438499
+Office -> Gym / Fitness Center -> Office,3,116.5337467749743,5,1198.7521621655062
+Office -> Gym / Fitness Center -> Office -> Neighborhood,4,116.5337467749743,1,3908.9957877795605
+American Restaurant -> Food & Drink Shop,2,111.8574145710466,6,111.8574145710466
+American Restaurant -> Food & Drink Shop -> American Restaurant,3,111.8574145710466,1,3853.754259150105
+American Restaurant -> Food & Drink Shop -> Residential Building (Apartment / Condo),3,111.8574145710466,1,4004.6705098580815
+American Restaurant -> Park,2,110.84623947699248,5,110.84623947699248
+American Restaurant -> Park -> Food & Drink Shop,3,110.84623947699248,2,4749.146230073578
+Gym / Fitness Center -> Food & Drink Shop,2,110.31698559985084,16,110.31698559985084
+Gym / Fitness Center -> Food & Drink Shop -> Bar,3,110.31698559985084,1,366.96933713455167
+Gym / Fitness Center -> Food & Drink Shop -> Gym / Fitness Center,3,110.31698559985084,1,623.5495240741568
+Gym / Fitness Center -> Food & Drink Shop -> Gym / Fitness Center -> Food & Drink Shop,4,110.31698559985084,1,11872.865575183947
+Gym / Fitness Center -> Food & Drink Shop -> Subway,3,110.31698559985084,1,542.2991315432819
+Food & Drink Shop -> Gym / Fitness Center,2,110.31698559985082,15,110.31698559985082
+Food & Drink Shop -> Gym / Fitness Center -> American Restaurant,3,110.31698559985082,1,1541.5017036600423
+Food & Drink Shop -> Gym / Fitness Center -> American Restaurant -> Gym / Fitness Center,4,110.31698559985082,1,9976.792385186509
+Food & Drink Shop -> Gym / Fitness Center -> American Restaurant -> Gym / Fitness Center -> Food & Drink Shop,5,110.31698559985082,1,11872.865575183947
+Food & Drink Shop -> Gym / Fitness Center -> Coffee Shop,3,110.31698559985082,1,718.0788500435181
+Food & Drink Shop -> Gym / Fitness Center -> Deli / Bodega,3,110.31698559985082,1,1327.1561596980432
+Food & Drink Shop -> Gym / Fitness Center -> Food & Drink Shop,3,110.31698559985082,3,2374.573115036789
+Food & Drink Shop -> Gym / Fitness Center -> Park,3,110.31698559985082,1,1098.1167457520723
+Food & Drink Shop -> Gym / Fitness Center -> Park -> Bar,4,110.31698559985082,1,5871.509394152827
+Other Great Outdoors -> Food & Drink Shop,2,105.91316302572656,10,105.91316302572656
+Other Great Outdoors -> Food & Drink Shop -> Bus Station,3,105.91316302572656,1,5057.910643952258
+Other Great Outdoors -> Food & Drink Shop -> Bus Station -> Residential Building (Apartment / Condo),4,105.91316302572656,1,24028.02305914849
+Other Great Outdoors -> Food & Drink Shop -> Residential Building (Apartment / Condo),3,105.91316302572656,1,7208.406917744547
+Coffee Shop -> Bus Station,2,105.7034617335895,10,105.7034617335895
+Coffee Shop -> Bus Station -> Bar,3,105.7034617335895,1,587.1509394152826
+Office -> American Restaurant,2,104.54796784431333,10,104.54796784431333
+Office -> American Restaurant -> Office,3,104.54796784431333,1,647.3261675693733
+Office -> Train Station,2,104.40744638215699,23,104.40744638215699
+Office -> Train Station -> Coffee Shop,3,104.40744638215699,4,2809.8737610398534
+Office -> Train Station -> Coffee Shop -> Office,4,104.40744638215699,1,1618.3154189234335
+Office -> Train Station -> Coffee Shop -> Office -> Train Station,5,104.40744638215699,1,12047.711421662812
+Office -> Train Station -> Deli / Bodega,3,104.40744638215699,1,865.5366258900282
+Office -> Train Station -> Deli / Bodega -> Office,4,104.40744638215699,1,6473.261675693734
+Office -> Train Station -> Gym / Fitness Center,3,104.40744638215699,1,867.5471639292616
+Office -> Train Station -> Neighborhood,3,104.40744638215699,3,2549.34507898667
+Office -> Train Station -> Neighborhood -> Bar,4,104.40744638215699,1,1957.169798050942
+Office -> Train Station -> Neighborhood -> Coffee Shop,4,104.40744638215699,1,3590.39425021759
+Office -> Train Station -> Neighborhood -> Office,4,104.40744638215699,1,2157.753891897911
+Office -> Train Station -> Office,3,104.40744638215699,3,844.3384794383131
+Office -> Train Station -> Office -> Train Station,4,104.40744638215699,1,4015.9038072209373
+Subway -> Coffee Shop,2,103.35983447596094,19,103.35983447596094
+Subway -> Coffee Shop -> Office,3,103.35983447596094,2,681.3959658624983
+Subway -> Coffee Shop -> Park,3,103.35983447596094,1,1733.8685459243247
+Neighborhood -> Gym / Fitness Center,2,102.15145786880386,8,102.15145786880386
+Bar -> Bus Station,2,97.95452374936019,14,97.95452374936019
+Coffee Shop -> Office -> Food & Drink Shop,3,96.52736239986949,1,96.52736239986949
+Food & Drink Shop -> Deli / Bodega,2,96.30366051713514,7,96.30366051713514
+Food & Drink Shop -> Deli / Bodega -> Bus Station,3,96.30366051713514,1,2408.528878072504
+Gym / Fitness Center -> Park,2,95.6547687937345,10,95.6547687937345
+Gym / Fitness Center -> Park -> Bar,3,95.6547687937345,2,1174.301878830565
+Bus Station -> Coffee Shop,2,95.13311556023056,8,95.13311556023056
+Bus Station -> Coffee Shop -> Bus Station,3,95.13311556023056,2,4214.925536626882
+Bus Station -> Coffee Shop -> Food & Drink Shop,3,95.13311556023056,1,1484.1081968979934
+Bus Station -> Coffee Shop -> Food & Drink Shop -> Coffee Shop,4,95.13311556023056,1,10771.182750652772
+Deli / Bodega -> Home (private),2,94.59978566306216,16,94.59978566306216
+Train Station -> Bus Station,2,94.58458427213199,6,94.58458427213199
+Train Station -> Bus Station -> Train Station,3,94.58458427213199,2,4015.9038072209373
+Bus Station -> American Restaurant,2,90.76555664337835,4,90.76555664337835
+Deli / Bodega -> Other Great Outdoors,2,88.79278499317863,5,88.79278499317863
+Gym / Fitness Center -> Coffee Shop,2,87.57059146872172,14,87.57059146872172
+Gym / Fitness Center -> Coffee Shop -> Home (private),3,87.57059146872172,1,364.46256708581546
+Gym / Fitness Center -> Coffee Shop -> Neighborhood,3,87.57059146872172,1,1396.0699242069861
+Gym / Fitness Center -> Coffee Shop -> Neighborhood -> Office,4,87.57059146872172,2,12946.523351387468
+Gym / Fitness Center -> Coffee Shop -> Office,3,87.57059146872172,4,1849.5033359124955
+Bus Station -> Bar,2,86.43046213178843,15,86.43046213178843
+Bus Station -> Bar -> Bus Station,3,86.43046213178843,2,2247.960286201004
+Bus Station -> Train Station,2,82.76151123811549,7,82.76151123811549
+Bus Station -> Train Station -> American Restaurant,3,82.76151123811549,1,3303.2179364143763
+Bus Station -> Train Station -> Food & Drink Shop,3,82.76151123811549,1,1696.1236535977066
+American Restaurant -> Other Great Outdoors,2,82.50678164103704,4,82.50678164103704
+American Restaurant -> Train Station,2,81.07477403541596,5,81.07477403541596
+Park -> Bus Station,2,80.82311671384241,3,80.82311671384241
+American Restaurant -> Deli / Bodega,2,80.37957898574959,3,80.37957898574959
+Neighborhood -> Subway,2,78.96961187433456,8,78.96961187433456
+Neighborhood -> Subway -> Bar,3,78.96961187433456,1,733.9386742691033
+Neighborhood -> Subway -> Gym / Fitness Center,3,78.96961187433456,1,1247.0990481483136
+Neighborhood -> Subway -> Park,3,78.96961187433456,1,2058.9688982851353
+Bus Station -> Deli / Bodega,2,78.14462176828518,4,78.14462176828518
+Bus Station -> Deli / Bodega -> Subway,3,78.14462176828518,1,2169.1965261731275
+Coffee Shop -> Bar,2,73.62394224643042,20,73.62394224643042
+Coffee Shop -> Bar -> American Restaurant,3,73.62394224643042,1,2312.252555490063
+Coffee Shop -> Bar -> American Restaurant -> Coffee Shop,4,73.62394224643042,1,10771.182750652772
+Coffee Shop -> Bar -> Coffee Shop,3,73.62394224643042,1,1077.118275065277
+Coffee Shop -> Bar -> Office,3,73.62394224643042,1,323.66308378468665
+Neighborhood -> Coffee Shop,2,73.52343174507011,6,73.52343174507011
+Neighborhood -> Coffee Shop -> American Restaurant,3,73.52343174507011,1,3853.754259150105
+Neighborhood -> Coffee Shop -> American Restaurant -> Coffee Shop,4,73.52343174507011,1,10771.182750652772
+Neighborhood -> Coffee Shop -> Bar,3,73.52343174507011,2,1957.169798050942
+Neighborhood -> Coffee Shop -> Bar -> American Restaurant,4,73.52343174507011,1,23122.525554900632
+Neighborhood -> Coffee Shop -> Bar -> American Restaurant -> Coffee Shop,5,73.52343174507011,1,10771.182750652772
+Neighborhood -> Coffee Shop -> Bar -> Coffee Shop,4,73.52343174507011,1,10771.182750652772
+Neighborhood -> Coffee Shop -> Gym / Fitness Center,3,73.52343174507011,1,1662.798730864418
+Neighborhood -> Coffee Shop -> Gym / Fitness Center -> Office,4,73.52343174507011,1,6473.261675693734
+Neighborhood -> Bar,2,73.47736443194664,11,73.47736443194664
+Bus Station -> Food & Drink Shop,2,69.90892389705955,6,69.90892389705955
+Bus Station -> Food & Drink Shop -> Bus Station,3,69.90892389705955,1,2809.950357751254
+Bus Station -> Food & Drink Shop -> Coffee Shop,3,69.90892389705955,1,1795.197125108795
+Park -> Bar,2,67.55331997107758,11,67.55331997107758
+Park -> Bar -> Food & Drink Shop,3,67.55331997107758,1,1079.3514159258134
+Park -> Bar -> Office,3,67.55331997107758,1,588.4783341539758
+Food & Drink Shop -> Neighborhood,2,67.53620918762199,5,67.53620918762199
+Food & Drink Shop -> Neighborhood -> Park,3,67.53620918762199,1,3294.3502372562166
+Bar -> Coffee Shop,2,66.26154802178739,17,66.26154802178739
+Bar -> Coffee Shop -> Bar,3,66.26154802178739,2,690.7658110768031
+Bar -> Coffee Shop -> Food & Drink Shop,3,66.26154802178739,1,698.4038573637615
+Bar -> Coffee Shop -> Food & Drink Shop -> Office,4,66.26154802178739,1,6473.261675693734
+Bar -> Coffee Shop -> Food & Drink Shop -> Office -> Gym / Fitness Center,5,66.26154802178739,1,9976.792385186509
+Bar -> Coffee Shop -> Gym / Fitness Center,3,66.26154802178739,1,586.8701403050887
+Bar -> Coffee Shop -> Office,3,66.26154802178739,1,380.78009857021965
+Bar -> Coffee Shop -> Office -> Gym / Fitness Center,4,66.26154802178739,1,9976.792385186509
+Bar -> Coffee Shop -> Subway,3,66.26154802178739,1,510.3991826289712
+Bar -> Coffee Shop -> Subway -> Bar,4,66.26154802178739,1,5871.509394152827
+Train Station -> American Restaurant,2,64.85981922833277,4,64.85981922833277
+Train Station -> American Restaurant -> Office,3,64.85981922833277,1,1618.3154189234335
+Train Station -> American Restaurant -> Train Station,3,64.85981922833277,2,6023.855710831406
+American Restaurant -> Residential Building (Apartment / Condo),2,64.67839316056121,2,64.67839316056121
+Residential Building (Apartment / Condo) -> American Restaurant,2,64.6783931605612,2,64.6783931605612
+Residential Building (Apartment / Condo) -> American Restaurant -> Gym / Fitness Center,3,64.6783931605612,1,4988.396192593254
+Other Great Outdoors -> Bar,2,62.85291055292946,12,62.85291055292946
+Other Great Outdoors -> Bar -> Other Great Outdoors,3,62.85291055292946,1,1277.1362241518857
+Office -> Bar,2,61.94508780568167,23,61.94508780568167
+Office -> Bar -> Gym / Fitness Center,3,61.94508780568167,1,433.7735819646308
+Office -> Bar -> Gym / Fitness Center -> Office,4,61.94508780568167,1,6473.261675693734
+Office -> Bar -> Office,3,61.94508780568167,2,562.8923196255421
+Office -> Bar -> Other Great Outdoors,3,61.94508780568167,1,666.3319430357665
+Office -> Bar -> Park,3,61.94508780568167,1,716.1630950556993
+Office -> Bar -> Park -> Gym / Fitness Center,4,61.94508780568167,1,9976.792385186509
+Gym / Fitness Center -> Bar,2,61.374662656649754,18,61.374662656649754
+Gym / Fitness Center -> Bar -> Coffee Shop,3,61.374662656649754,1,598.3990417029318
+Gym / Fitness Center -> Bar -> Gym / Fitness Center,3,61.374662656649754,1,554.2662436214728
+Bar -> Deli / Bodega,2,61.23242705373748,8,61.23242705373748
+Bar -> Deli / Bodega -> Office,3,61.23242705373748,1,809.1577094617168
+Subway -> Residential Building (Apartment / Condo),2,60.67682590694063,5,60.67682590694063
+Subway -> Residential Building (Apartment / Condo) -> Train Station,3,60.67682590694063,1,2409.5422843325623
+Bus Station -> Other Great Outdoors,2,60.15950810529001,4,60.15950810529001
+Bar -> Office,2,59.732763241193034,27,59.732763241193034
+Bar -> Office -> Coffee Shop,3,59.732763241193034,1,398.93269446862115
+Bar -> Office -> Coffee Shop -> Train Station,4,59.732763241193034,2,24095.422843325625
+Bar -> Office -> Deli / Bodega,3,59.732763241193034,1,737.308977610024
+Bar -> Office -> Food & Drink Shop,3,59.732763241193034,1,439.7357620438499
+Bar -> Office -> Gym / Fitness Center,3,59.732763241193034,1,369.5108290809818
+Bar -> Office -> Neighborhood,3,59.732763241193034,1,723.8881088480668
+Deli / Bodega -> Bus Station,2,58.608466326213886,3,58.608466326213886
+Deli / Bodega -> Gym / Fitness Center,2,57.80296862796355,5,57.80296862796355
+Deli / Bodega -> Gym / Fitness Center -> Deli / Bodega,3,57.80296862796355,1,3981.4684790941296
+Gym / Fitness Center -> Deli / Bodega,2,57.80296862796355,5,57.80296862796355
+Gym / Fitness Center -> Deli / Bodega -> Office,3,57.80296862796355,1,1294.6523351387466
+Bar -> Food & Drink Shop,2,56.80796925925334,13,56.80796925925334
+Bar -> Food & Drink Shop -> Coffee Shop,3,56.80796925925334,1,828.5525192809823
+Bar -> Food & Drink Shop -> Office,3,56.80796925925334,1,497.9432058225949
+Bar -> Food & Drink Shop -> Office -> Gym / Fitness Center,4,56.80796925925334,1,9976.792385186509
+Office -> Residential Building (Apartment / Condo),2,54.32107699882853,4,54.32107699882853
+Office -> Residential Building (Apartment / Condo) -> American Restaurant,3,54.32107699882853,1,5780.631388725158
+Office -> Residential Building (Apartment / Condo) -> Bar,3,54.32107699882853,1,1467.8773485382067
+Office -> Residential Building (Apartment / Condo) -> Bar -> Other Great Outdoors,4,54.32107699882853,1,15325.63468982263
+Office -> Residential Building (Apartment / Condo) -> Office,3,54.32107699882853,1,1618.3154189234335
+Office -> Residential Building (Apartment / Condo) -> Office -> American Restaurant,4,54.32107699882853,1,23122.525554900632
+Office -> Residential Building (Apartment / Condo) -> Other Great Outdoors,3,54.32107699882853,1,3831.4086724556573
+American Restaurant -> Gym / Fitness Center,2,53.7108607547053,4,53.7108607547053
+American Restaurant -> Gym / Fitness Center -> Food & Drink Shop,3,53.7108607547053,1,2968.2163937959867
+American Restaurant -> Gym / Fitness Center -> Food & Drink Shop -> Gym / Fitness Center,4,53.7108607547053,1,9976.792385186509
+American Restaurant -> Gym / Fitness Center -> Food & Drink Shop -> Gym / Fitness Center -> Food & Drink Shop,5,53.7108607547053,1,11872.865575183947
+American Restaurant -> Gym / Fitness Center -> Office,3,53.7108607547053,1,1618.3154189234335
+American Restaurant -> Gym / Fitness Center -> Office -> Gym / Fitness Center,4,53.7108607547053,1,9976.792385186509
+Food & Drink Shop -> Bar,2,52.750257169306664,13,52.750257169306664
+Food & Drink Shop -> Bar -> Coffee Shop,3,52.750257169306664,1,828.5525192809823
+Food & Drink Shop -> Bar -> Coffee Shop -> Bar,4,52.750257169306664,1,5871.509394152827
+Other Great Outdoors -> Office,2,51.97087875222445,5,51.97087875222445
+Other Great Outdoors -> Office -> Bar,3,51.97087875222445,2,2348.60375766113
+Other Great Outdoors -> Office -> Bar -> Other Great Outdoors,4,51.97087875222445,1,7662.817344911315
+Other Great Outdoors -> Office -> Other Great Outdoors,3,51.97087875222445,2,6130.253875929052
+Other Great Outdoors -> Office -> Residential Building (Apartment / Condo),3,51.97087875222445,1,4805.604611829697
+Other Great Outdoors -> Office -> Residential Building (Apartment / Condo) -> American Restaurant,4,51.97087875222445,1,23122.525554900632
+Other Great Outdoors -> Office -> Residential Building (Apartment / Condo) -> Bar,4,51.97087875222445,1,5871.509394152827
+Other Great Outdoors -> Office -> Residential Building (Apartment / Condo) -> Bar -> Other Great Outdoors,5,51.97087875222445,1,15325.63468982263
+Other Great Outdoors -> Office -> Residential Building (Apartment / Condo) -> Office,4,51.97087875222445,1,6473.261675693734
+Other Great Outdoors -> Office -> Residential Building (Apartment / Condo) -> Office -> American Restaurant,5,51.97087875222445,1,23122.525554900632
+Other Great Outdoors -> Office -> Residential Building (Apartment / Condo) -> Other Great Outdoors,4,51.97087875222445,1,15325.63468982263
+Train Station -> Residential Building (Apartment / Condo),2,50.54983813285096,3,50.54983813285096
+Food & Drink Shop -> Train Station,2,49.95595613681885,6,49.95595613681885
+Food & Drink Shop -> Train Station -> Gym / Fitness Center,3,49.95595613681885,1,3325.597461728836
+Home (private) -> Residential Building (Apartment / Condo),2,49.95430989427961,5,49.95430989427961
+Home (private) -> Residential Building (Apartment / Condo) -> Park,3,49.95430989427961,1,3294.3502372562166
+Train Station -> Gym / Fitness Center,2,48.97443667342606,6,48.97443667342606
+Train Station -> Gym / Fitness Center -> Train Station,3,48.97443667342606,2,4015.9038072209373
+Deli / Bodega -> Bar,2,47.62522104179582,7,47.62522104179582
+Bus Station -> Residential Building (Apartment / Condo),2,47.16000600421686,2,47.16000600421686
+Residential Building (Apartment / Condo) -> Bus Station,2,47.160006004216854,2,47.160006004216854
+Bar -> Neighborhood,2,46.75832282032968,5,46.75832282032968
+Bar -> Neighborhood -> Bar,3,46.75832282032968,1,1174.301878830565
+Residential Building (Apartment / Condo) -> Park,2,46.07482849309394,2,46.07482849309394
+Park -> American Restaurant,2,44.33849579079699,2,44.33849579079699
+Bar -> Gym / Fitness Center,2,44.326145252024816,13,44.326145252024816
+Bar -> Gym / Fitness Center -> American Restaurant,3,44.326145252024816,1,1778.655811915433
+Bar -> Gym / Fitness Center -> Office,3,44.326145252024816,2,995.8864116451898
+Train Station -> Other Great Outdoors,2,42.98915761521074,4,42.98915761521074
+Train Station -> Other Great Outdoors -> Bus Station,3,42.98915761521074,1,4214.925536626882
+Train Station -> Other Great Outdoors -> Deli / Bodega,3,42.98915761521074,2,9953.671197735324
+Train Station -> Other Great Outdoors -> Deli / Bodega -> Home (private),4,42.98915761521074,2,5102.475939201416
+Train Station -> Other Great Outdoors -> Home (private),3,42.98915761521074,2,2551.237969600708
+Train Station -> Other Great Outdoors -> Subway,3,42.98915761521074,1,2169.1965261731275
+Gym / Fitness Center -> Train Station,2,41.97808857722234,6,41.97808857722234
+Gym / Fitness Center -> Train Station -> Subway,3,41.97808857722234,1,2892.2620348975033
+Train Station -> Food & Drink Shop,2,41.62996344734904,5,41.62996344734904
+Subway -> Home (private),2,38.655120751525885,15,38.655120751525885
+Bus Station -> Neighborhood,2,38.36109703414682,2,38.36109703414682
+Subway -> Bar,2,35.58490541910804,12,35.58490541910804
+Subway -> Gym / Fitness Center,2,35.27148823045736,7,35.27148823045736
+Subway -> Gym / Fitness Center -> Office,3,35.27148823045736,1,924.7516679562477
+Subway -> Gym / Fitness Center -> Park,3,35.27148823045736,1,2353.1073123258693
+Subway -> Gym / Fitness Center -> Park -> Bar,4,35.27148823045736,1,5871.509394152827
+Bar -> Park,2,33.77665998553879,6,33.77665998553879
+Bar -> Park -> Coffee Shop,3,33.77665998553879,1,1795.197125108795
+Bar -> Park -> Food & Drink Shop,3,33.77665998553879,1,1978.8109291973244
+Bar -> Park -> Gym / Fitness Center,3,33.77665998553879,1,1662.798730864418
+Bar -> Park -> Office,3,33.77665998553879,1,1078.8769459489556
+Residential Building (Apartment / Condo) -> Train Station,2,33.6998920885673,2,33.6998920885673
+Residential Building (Apartment / Condo) -> Food & Drink Shop,2,33.21081279771733,2,33.21081279771733
+Residential Building (Apartment / Condo) -> Bar,2,32.84760500225357,4,32.84760500225357
+Residential Building (Apartment / Condo) -> Bar -> Office,3,32.84760500225357,1,1618.3154189234335
+Residential Building (Apartment / Condo) -> Bar -> Other Great Outdoors,3,32.84760500225357,1,3831.4086724556573

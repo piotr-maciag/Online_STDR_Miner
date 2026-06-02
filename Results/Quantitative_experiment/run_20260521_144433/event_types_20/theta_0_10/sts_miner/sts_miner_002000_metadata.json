@@ -1,0 +1,19 @@
+{
+  "algorithm": "sts_miner",
+  "online_theta": 0.1,
+  "event_count": 2000,
+  "target_pattern_count": 230,
+  "pattern_count": 216,
+  "absolute_pattern_count_difference": 14,
+  "relative_pattern_count_difference": 0.06086956521739131,
+  "within_tolerance": true,
+  "tolerance_patterns": 23,
+  "spatial_radius": 250.0,
+  "temporal_window": 60.0,
+  "threshold": 192.0,
+  "mining_seconds": 0.22875945799751207,
+  "attempt_count": 30,
+  "patterns_path": "Results/Quantitative_experiment/run_20260521_144433/event_types_20/theta_0_10/sts_miner/sts_miner_002000_best_patterns.csv",
+  "metadata_path": "Results/Quantitative_experiment/run_20260521_144433/event_types_20/theta_0_10/sts_miner/sts_miner_002000_metadata.json",
+  "attempts_path": "Results/Quantitative_experiment/run_20260521_144433/event_types_20/theta_0_10/sts_miner/sts_miner_002000_attempts.csv"
+}

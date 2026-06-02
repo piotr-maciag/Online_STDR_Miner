@@ -1,0 +1,342 @@
+sequence,length,sequence_index,tail_event_count,last_density_ratio
+Drugstore / Pharmacy -> Bank,2,1510.6740934508093,5,1510.6740934508093
+Drugstore / Pharmacy -> Bank -> Coffee Shop,3,1510.6740934508093,1,4252.281415416945
+Drugstore / Pharmacy -> Bank -> Subway,3,1510.6740934508093,1,3622.8029036109165
+Deli / Bodega -> Bank,2,1464.191813652323,7,1464.191813652323
+Deli / Bodega -> Bank -> Pizza Place,3,1464.191813652323,1,10244.811489719395
+Bank -> Drugstore / Pharmacy,2,1208.5392747606477,4,1208.5392747606477
+Bank -> Drugstore / Pharmacy -> Bus Station,3,1208.5392747606477,2,17603.760587968536
+Bank -> Drugstore / Pharmacy -> Bus Station -> Coffee Shop,4,1208.5392747606477,2,21261.407077084725
+Bank -> Drugstore / Pharmacy -> Coffee Shop,3,1208.5392747606477,2,10630.703538542362
+Bank -> Pizza Place,2,1103.2873912005502,3,1103.2873912005502
+Building -> Bank,2,1086.3685369367806,5,1086.3685369367806
+Building -> Bank -> Deli / Bodega,3,1086.3685369367806,1,8157.640104634371
+Hotel -> Bank,2,879.7455014801772,3,879.7455014801772
+Drugstore / Pharmacy -> Bus Station,2,829.8068964025573,7,829.8068964025573
+Drugstore / Pharmacy -> Bus Station -> Coffee Shop,3,829.8068964025573,2,6074.687736309921
+Building -> Deli / Bodega,2,790.086208681295,8,790.086208681295
+Building -> Deli / Bodega -> Bank,3,790.086208681295,2,22433.510287744517
+Building -> Deli / Bodega -> Food & Drink Shop,3,790.086208681295,1,2720.4816580287197
+Building -> Deli / Bodega -> Office,3,790.086208681295,1,1638.4024367453865
+Bank -> Coffee Shop,2,763.2299976389388,7,763.2299976389388
+Bank -> Coffee Shop -> Building,3,763.2299976389388,1,6052.624705790636
+Bank -> Coffee Shop -> Subway,3,763.2299976389388,1,2587.7163597220833
+Drugstore / Pharmacy -> Food & Drink Shop,2,732.7896721962882,10,732.7896721962882
+Drugstore / Pharmacy -> Food & Drink Shop -> Coffee Shop,3,732.7896721962882,1,2126.1407077084723
+Drugstore / Pharmacy -> Food & Drink Shop -> Coffee Shop -> College Academic Building,4,732.7896721962882,1,37151.036145309394
+Drugstore / Pharmacy -> Food & Drink Shop -> Medical Center,3,732.7896721962882,1,5662.82783962483
+Building -> Office,2,729.9420057170728,22,729.9420057170728
+Building -> Office -> Building,3,729.9420057170728,1,1925.8351336606568
+Building -> Office -> Clothing Store,3,729.9420057170728,1,2642.4249508367147
+Building -> Office -> Clothing Store -> College Academic Building,4,729.9420057170728,1,37151.036145309394
+Building -> Office -> Coffee Shop,3,729.9420057170728,2,2899.282783238826
+Building -> Office -> Coffee Shop -> Park,4,729.9420057170728,1,15322.362543293106
+Building -> Office -> College Academic Building,3,729.9420057170728,1,1688.683461150427
+Building -> Office -> Park,3,729.9420057170728,1,2785.8840987805647
+Coffee Shop -> Office,2,716.6766430477995,43,716.6766430477995
+Coffee Shop -> Office -> Clothing Store,3,716.6766430477995,1,1351.9383469397146
+Coffee Shop -> Office -> Deli / Bodega,3,716.6766430477995,2,1897.1256057289238
+Coffee Shop -> Office -> Deli / Bodega -> Park,4,716.6766430477995,1,15322.362543293106
+Coffee Shop -> Office -> Neighborhood,3,716.6766430477995,1,837.3116099359139
+Coffee Shop -> Office -> Neighborhood -> Office,4,716.6766430477995,1,13107.219493963092
+Coffee Shop -> Office -> Train Station,3,716.6766430477995,2,1114.8861436406962
+Coffee Shop -> Office -> Train Station -> Neighborhood,4,716.6766430477995,1,18002.199613622146
+Coffee Shop -> Office -> Train Station -> Neighborhood -> Office,5,716.6766430477995,1,13107.219493963092
+Coffee Shop -> Office -> Park,3,712.6680252694468,1,712.6680252694468
+Medical Center -> Pizza Place,2,696.2493245440365,2,696.2493245440365
+Food & Drink Shop -> Bank,2,669.6570235147617,6,669.6570235147617
+Food & Drink Shop -> Bank -> Coffee Shop,3,669.6570235147617,1,3543.567846180787
+Food & Drink Shop -> Bank -> Deli / Bodega,3,669.6570235147617,1,6798.033420528643
+Deli / Bodega -> Hotel,2,666.4738647577101,5,666.4738647577101
+Deli / Bodega -> Hotel -> Bank,3,666.4738647577101,2,35893.616460391226
+Office -> Building,2,666.4687878286318,20,666.4687878286318
+Office -> Building -> Bar,3,666.4687878286318,3,1836.7534665263186
+Office -> Building -> Clothing Store,3,666.4687878286318,1,2906.667445920386
+Office -> Building -> Park,3,666.4687878286318,1,1532.2362543293104
+Office -> Building -> Train Station,3,666.4687878286318,1,1198.5026044137483
+Office -> Building -> Office,3,655.3609746981545,1,655.3609746981545
+Office -> Building -> Office -> Building,4,655.3609746981545,1,42368.37294053445
+Bank -> Deli / Bodega,2,627.510777279567,3,627.510777279567
+Bank -> Deli / Bodega -> Office,3,627.510777279567,1,4369.073164654364
+Neighborhood -> Building,2,610.2440546990559,7,610.2440546990559
+College Academic Building -> Medical Center,2,601.1494521894724,5,601.1494521894724
+College Academic Building -> Medical Center -> Bus Station,3,601.1494521894724,1,7041.504235187414
+College Academic Building -> Medical Center -> Bus Station -> Gym / Fitness Center,4,601.1494521894724,1,20417.897344738303
+College Academic Building -> Medical Center -> Gym / Fitness Center,3,601.1494521894724,1,8167.15893789532
+College Academic Building -> Medical Center -> Pizza Place,3,601.1494521894724,1,14342.736085607152
+Bank -> Clothing Store,2,596.239476086233,2,596.239476086233
+Bus Station -> Drugstore / Pharmacy,2,592.7192117161123,5,592.7192117161123
+Bus Station -> Drugstore / Pharmacy -> Bar,3,592.7192117161123,1,2449.004622035091
+Bus Station -> Drugstore / Pharmacy -> Bus Station,3,592.7192117161123,2,14083.008470374829
+Bus Station -> Drugstore / Pharmacy -> Bus Station -> Coffee Shop,4,592.7192117161123,1,10630.703538542362
+Bus Station -> Drugstore / Pharmacy -> Coffee Shop,3,592.7192117161123,1,4252.281415416945
+Bus Station -> Drugstore / Pharmacy -> Subway,3,592.7192117161123,1,3622.8029036109165
+Other Great Outdoors -> Bus Station,2,585.7073763094893,9,585.7073763094893
+Other Great Outdoors -> Bus Station -> Home (private),3,585.7073763094893,2,2322.8644662738257
+Deli / Bodega -> Office,2,580.506224674356,19,580.506224674356
+Deli / Bodega -> Office -> Coffee Shop,3,580.506224674356,1,1119.0214251097225
+Deli / Bodega -> Office -> Coffee Shop -> Office,4,580.506224674356,2,26214.438987926183
+Building -> Clothing Store,2,563.0348563526172,4,563.0348563526172
+Building -> Clothing Store -> College Academic Building,3,563.0348563526172,1,9287.759036327348
+Building -> Clothing Store -> Gym / Fitness Center,3,563.0348563526172,1,5104.474336184576
+Coffee Shop -> Deli / Bodega,2,545.1642840278134,10,545.1642840278134
+Coffee Shop -> Deli / Bodega -> Bank,3,545.1642840278134,1,8973.404115097806
+Coffee Shop -> Deli / Bodega -> Hotel,3,545.1642840278134,1,5718.345759621152
+Coffee Shop -> Deli / Bodega -> Hotel -> Bank,4,545.1642840278134,1,89734.04115097807
+Coffee Shop -> Deli / Bodega -> Office,3,545.1642840278134,1,1310.721949396309
+Coffee Shop -> Deli / Bodega -> Park,3,545.1642840278134,1,3064.472508658621
+Bus Station -> Bank,2,541.6541719374934,3,541.6541719374934
+Bus Station -> Bank -> Bus Station,3,541.6541719374934,1,11735.840391979025
+Bus Station -> Bank -> Bus Station -> Coffee Shop,4,541.6541719374934,1,21261.407077084725
+Bus Station -> Bank -> Clothing Store,3,541.6541719374934,1,19377.782972802575
+Bus Station -> Bank -> Coffee Shop,3,541.6541719374934,1,7087.135692361574
+Bus Station -> Bank -> Drugstore / Pharmacy,3,541.6541719374934,1,19638.763214860523
+Bus Station -> Bank -> Drugstore / Pharmacy -> Bus Station,4,541.6541719374934,1,35207.52117593707
+Bus Station -> Bank -> Drugstore / Pharmacy -> Bus Station -> Coffee Shop,5,541.6541719374934,1,21261.407077084725
+Bus Station -> Bank -> Drugstore / Pharmacy -> Coffee Shop,4,541.6541719374934,1,21261.407077084725
+Building -> College Academic Building,2,539.7244960577636,6,539.7244960577636
+Building -> College Academic Building -> Clothing Store,3,539.7244960577636,1,9688.891486401288
+Building -> College Academic Building -> Train Station,3,539.7244960577636,1,3995.008681379161
+Deli / Bodega -> Medical Center,2,528.002595769215,4,528.002595769215
+Medical Center -> Deli / Bodega,2,528.002595769215,4,528.002595769215
+Medical Center -> Deli / Bodega -> Medical Center,3,528.002595769215,2,28314.13919812415
+Office -> Clothing Store,2,522.5469565699572,12,522.5469565699572
+Office -> Clothing Store -> College Academic Building,3,522.5469565699572,1,3095.919678775783
+Office -> Clothing Store -> Train Station,3,522.5469565699572,1,1997.5043406895804
+Office -> Clothing Store -> Train Station -> Neighborhood,4,522.5469565699572,1,36004.39922724429
+Office -> Clothing Store -> Train Station -> Neighborhood -> Hotel,5,522.5469565699572,1,57183.45759621153
+Pizza Place -> Building,2,520.9226181213252,3,520.9226181213252
+Subway -> Bus Station,2,510.25393008604465,14,510.25393008604465
+Coffee Shop -> Office -> Food & Drink Shop,3,506.13612242394794,1,506.13612242394794
+Drugstore / Pharmacy -> Coffee Shop,2,501.11060451041436,7,501.11060451041436
+Drugstore / Pharmacy -> Coffee Shop -> College Academic Building,3,501.11060451041436,1,5307.290877901342
+Drugstore / Pharmacy -> Coffee Shop -> Drugstore / Pharmacy,3,501.11060451041436,1,8416.612806368796
+Drugstore / Pharmacy -> Coffee Shop -> Drugstore / Pharmacy -> Food & Drink Shop,4,501.11060451041436,1,21763.853264229758
+Drugstore / Pharmacy -> Coffee Shop -> Food & Drink Shop,3,501.11060451041436,1,3109.121894889966
+Coffee Shop -> Office -> Coffee Shop,3,494.4513273740634,1,494.4513273740634
+Coffee Shop -> Office -> Coffee Shop -> Office,4,494.4513273740634,1,13107.219493963092
+Office -> Deli / Bodega,2,488.84734709419456,16,488.84734709419456
+Office -> Deli / Bodega -> Coffee Shop,3,488.84734709419456,1,1328.8379423177953
+Office -> Deli / Bodega -> Office,3,488.84734709419456,2,1638.4024367453865
+Office -> Deli / Bodega -> Park,3,488.84734709419456,1,1915.2953179116382
+Hotel -> Coffee Shop,2,486.37205731893164,5,486.37205731893164
+Hotel -> Coffee Shop -> Office,3,486.37205731893164,1,2621.443898792618
+Medical Center -> College Academic Building,2,480.919561751578,3,480.919561751578
+Medical Center -> College Academic Building -> Medical Center,3,480.919561751578,2,37752.185597498865
+Medical Center -> College Academic Building -> Medical Center -> Pizza Place,4,480.919561751578,1,35856.84021401788
+Office -> Coffee Shop,2,477.78442869853313,29,477.78442869853313
+Office -> Coffee Shop -> Bank,3,477.78442869853313,1,3094.2772810682095
+Office -> Coffee Shop -> Bank -> Coffee Shop,4,477.78442869853313,1,21261.407077084725
+Office -> Coffee Shop -> Bank -> Coffee Shop -> Subway,5,477.78442869853313,1,18114.014518054584
+Office -> Coffee Shop -> Bank -> Subway,4,477.78442869853313,1,18114.014518054584
+Office -> Coffee Shop -> College Academic Building,3,477.78442869853313,1,1281.0702119072205
+Office -> Coffee Shop -> College Academic Building -> Building,4,477.78442869853313,1,42368.37294053445
+Office -> Coffee Shop -> College Academic Building -> Building -> Office,5,477.78442869853313,1,13107.219493963092
+Office -> Coffee Shop -> College Academic Building -> Hotel,4,477.78442869853313,1,57183.45759621153
+Office -> Coffee Shop -> College Academic Building -> Hotel -> Building,5,477.78442869853313,2,84736.7458810689
+Office -> Coffee Shop -> Deli / Bodega,3,477.78442869853313,1,1406.4896732128227
+Office -> Coffee Shop -> Hotel,3,477.78442869853313,2,3943.6867307732086
+Office -> Coffee Shop -> Hotel -> Building,4,477.78442869853313,2,42368.37294053445
+Office -> Coffee Shop -> Hotel -> Building -> Office,5,477.78442869853313,1,13107.219493963092
+Office -> Coffee Shop -> Office,3,477.78442869853313,5,2259.8654299936366
+Office -> Coffee Shop -> Park,3,477.78442869853313,1,1056.7146581581453
+Train Station -> Hotel,2,470.00102133872485,4,470.00102133872485
+Other Great Outdoors -> Subway,2,468.7545346631501,14,468.7545346631501
+Bank -> Subway,2,464.46191071934834,5,464.46191071934834
+Park -> Other Great Outdoors,2,453.1567480456371,7,453.1567480456371
+Park -> Other Great Outdoors -> Bar,3,453.1567480456371,1,1749.289015739351
+College Academic Building -> Building,2,449.7704133814697,4,449.7704133814697
+College Academic Building -> Building -> Gym / Fitness Center,3,449.7704133814697,2,10208.948672369152
+College Academic Building -> Building -> Office,3,449.7704133814697,2,6553.609746981546
+Bank -> Food & Drink Shop,2,446.43801567650786,4,446.43801567650786
+Residential Building (Apartment / Condo) -> Building,2,444.8123143363197,4,444.8123143363197
+Food & Drink Shop -> Drugstore / Pharmacy,2,439.6738033177729,6,439.6738033177729
+Food & Drink Shop -> Drugstore / Pharmacy -> Food & Drink Shop,3,439.6738033177729,1,3627.3088773716263
+Drugstore / Pharmacy -> American Restaurant,2,439.67380331777287,3,439.67380331777287
+Drugstore / Pharmacy -> American Restaurant -> Coffee Shop,3,439.67380331777287,1,7087.135692361574
+Coffee Shop -> Bank,2,436.13142722225064,4,436.13142722225064
+Coffee Shop -> Bank -> Coffee Shop,3,436.13142722225064,1,5315.351769271181
+Coffee Shop -> Bank -> Coffee Shop -> Subway,4,436.13142722225064,1,18114.014518054584
+Coffee Shop -> Bank -> Subway,3,436.13142722225064,1,4528.503629513646
+American Restaurant -> Clothing Store,2,433.8309620776696,3,433.8309620776696
+American Restaurant -> Clothing Store -> Home (private),3,433.8309620776696,1,3484.2966994107383
+Subway -> Drugstore / Pharmacy,2,426.92963510566364,7,426.92963510566364
+Subway -> Drugstore / Pharmacy -> Food & Drink Shop,3,426.92963510566364,2,6218.243789779932
+Subway -> Drugstore / Pharmacy -> Food & Drink Shop -> Medical Center,4,426.92963510566364,1,28314.13919812415
+Subway -> Drugstore / Pharmacy -> Medical Center,3,426.92963510566364,1,8089.754056606901
+Gym / Fitness Center -> Bank,2,418.8286634818113,4,418.8286634818113
+Coffee Shop -> Hotel,2,416.8903348447985,6,416.8903348447985
+Coffee Shop -> Hotel -> Bank,3,416.8903348447985,1,14955.67352516301
+Coffee Shop -> Hotel -> Building,3,416.8903348447985,2,14122.790980178148
+Coffee Shop -> Hotel -> Building -> Office,4,416.8903348447985,1,13107.219493963092
+Coffee Shop -> Hotel -> Gym / Fitness Center,3,416.8903348447985,1,3402.982890789717
+Drugstore / Pharmacy -> Deli / Bodega,2,412.0020254865844,3,412.0020254865844
+Drugstore / Pharmacy -> Deli / Bodega -> Medical Center,3,412.0020254865844,1,18876.092798749432
+Drugstore / Pharmacy -> Deli / Bodega -> Office,3,412.0020254865844,1,4369.073164654364
+Building -> Coffee Shop,2,411.84323635999465,8,411.84323635999465
+Building -> Coffee Shop -> Park,3,411.84323635999465,1,3830.5906358232764
+Clothing Store -> Deli / Bodega,2,406.5269155133408,3,406.5269155133408
+Clothing Store -> Deli / Bodega -> Coffee Shop,3,406.5269155133408,1,7087.135692361574
+Train Station -> Drugstore / Pharmacy,2,403.5362304423395,5,403.5362304423395
+Hotel -> Gym / Fitness Center,2,400.35092832820203,6,400.35092832820203
+Hotel -> Gym / Fitness Center -> Bank,3,400.35092832820203,1,14955.67352516301
+Other Great Outdoors -> Park,2,396.51215453993257,7,396.51215453993257
+Hotel -> Train Station,2,391.6675177822707,5,391.6675177822707
+Drugstore / Pharmacy -> Clothing Store,2,391.4703630869207,2,391.4703630869207
+Drugstore / Pharmacy -> Clothing Store -> College Academic Building,3,391.4703630869207,1,18575.518072654697
+Train Station -> Deli / Bodega,2,391.11973104411373,7,391.11973104411373
+Train Station -> Deli / Bodega -> Office,3,391.11973104411373,1,1872.459927709013
+Hotel -> Drugstore / Pharmacy,2,385.07378852667694,2,385.07378852667694
+Park -> Food & Drink Shop,2,381.1532970968434,10,381.1532970968434
+Park -> Food & Drink Shop -> Hotel,3,381.1532970968434,1,5718.345759621152
+Park -> Food & Drink Shop -> Office,3,381.1532970968434,1,1310.721949396309
+Park -> Food & Drink Shop -> Park,3,381.1532970968434,1,3064.472508658621
+Park -> Food & Drink Shop -> Subway,3,381.1532970968434,2,5434.204355416375
+Subway -> Park,2,380.6798147402014,12,380.6798147402014
+Subway -> Park -> Bar,3,380.6798147402014,1,1020.4185925146213
+Subway -> Bank,2,371.56952857547856,4,371.56952857547856
+Food & Drink Shop -> Coffee Shop,2,370.22350631739573,14,370.22350631739573
+Food & Drink Shop -> Coffee Shop -> College Academic Building,3,370.22350631739573,1,2653.645438950671
+Food & Drink Shop -> Coffee Shop -> Food & Drink Shop,3,370.22350631739573,1,1554.560947444983
+Food & Drink Shop -> Coffee Shop -> Office,3,370.22350631739573,1,936.2299638545065
+Food & Drink Shop -> Coffee Shop -> Office -> Food & Drink Shop,4,370.22350631739573,1,21763.853264229758
+Bank -> Bus Station,2,361.1027812916623,2,361.1027812916623
+Bank -> Bus Station -> Coffee Shop,3,361.1027812916623,2,21261.407077084725
+Food & Drink Shop -> Pizza Place,2,356.78447974147144,4,356.78447974147144
+Pizza Place -> American Restaurant,2,356.78447974147144,2,356.78447974147144
+Drugstore / Pharmacy -> Office,2,353.0564173458072,8,353.0564173458072
+Drugstore / Pharmacy -> Office -> Gym / Fitness Center,3,353.0564173458072,1,5104.474336184576
+Drugstore / Pharmacy -> Road,2,348.61709848864837,2,348.61709848864837
+Deli / Bodega -> Coffee Shop,2,346.9227261995177,7,346.9227261995177
+Deli / Bodega -> Coffee Shop -> Office,3,346.9227261995177,2,3744.919855418026
+Office -> Bank,2,336.0825511272587,5,336.0825511272587
+Office -> Bank -> Coffee Shop,3,336.0825511272587,1,4252.281415416945
+Office -> Bank -> Coffee Shop -> Subway,4,336.0825511272587,1,18114.014518054584
+Office -> Bank -> Subway,3,336.0825511272587,1,3622.8029036109165
+Park -> Coffee Shop,2,335.11850033933894,8,335.11850033933894
+Park -> Coffee Shop -> Building,3,335.11850033933894,1,5296.046617566806
+Park -> Coffee Shop -> Office,3,335.11850033933894,1,1638.4024367453865
+Park -> Coffee Shop -> Park,3,335.11850033933894,2,7661.181271646553
+Medical Center -> Road,2,335.07857039200184,2,335.07857039200184
+Deli / Bodega -> Pizza Place,2,334.32951248501524,2,334.32951248501524
+Bus Station -> Subway,2,328.020383626743,9,328.020383626743
+Bus Station -> Subway -> Bus Station,3,328.020383626743,4,15647.787189305367
+Residential Building (Apartment / Condo) -> Deli / Bodega,2,321.1669332533217,3,321.1669332533217
+Coffee Shop -> Building,2,308.88242726999596,6,308.88242726999596
+Coffee Shop -> Building -> Office,3,308.88242726999596,1,2184.536582327182
+Clothing Store -> Park,2,305.4291536869058,3,305.4291536869058
+Clothing Store -> Residential Building (Apartment / Condo),2,305.1619365795682,2,305.1619365795682
+Pizza Place -> College Academic Building,2,304.5166897156508,2,304.5166897156508
+Subway -> Neighborhood,2,298.17307848649517,8,298.17307848649517
+Subway -> Neighborhood -> Food & Drink Shop,3,298.17307848649517,1,2720.4816580287197
+Subway -> Neighborhood -> Food & Drink Shop -> Office,4,298.17307848649517,1,13107.219493963092
+Subway -> Neighborhood -> Office,3,298.17307848649517,4,6553.609746981546
+Subway -> Neighborhood -> Office -> Gym / Fitness Center,4,298.17307848649517,1,5104.474336184576
+Subway -> Neighborhood -> Park,3,298.17307848649517,1,3830.5906358232764
+Clothing Store -> Bank,2,298.1197380431165,1,298.1197380431165
+Train Station -> Subway,2,297.7646222145959,9,297.7646222145959
+Train Station -> Subway -> Bar,3,297.7646222145959,1,1360.5581233528285
+Train Station -> Subway -> Train Station,3,297.7646222145959,2,5326.678241838882
+Train Station -> Subway -> Train Station -> Bar,4,297.7646222145959,1,6122.511555087728
+Subway -> Pizza Place,2,296.95105767302596,4,296.95105767302596
+Building -> Park,2,296.8012114923604,4,296.8012114923604
+Building -> Park -> Office,3,296.8012114923604,1,3276.804873490773
+Deli / Bodega -> Building,2,296.28232825548565,3,296.28232825548565
+Deli / Bodega -> Building -> Deli / Bodega,3,296.28232825548565,1,13596.066841057285
+Deli / Bodega -> Building -> Hotel,3,296.28232825548565,1,19061.152532070508
+Deli / Bodega -> Subway,2,295.56667045776715,7,295.56667045776715
+Subway -> Deli / Bodega,2,295.56667045776715,7,295.56667045776715
+Subway -> Deli / Bodega -> Bar,3,295.56667045776715,1,1749.289015739351
+Subway -> Deli / Bodega -> Coffee Shop,3,295.56667045776715,1,3037.3438681549605
+Subway -> Deli / Bodega -> Coffee Shop -> Office,4,295.56667045776715,2,26214.438987926183
+Subway -> Deli / Bodega -> Office,3,295.56667045776715,3,5617.3797831270385
+Subway -> Deli / Bodega -> Office -> Coffee Shop,4,295.56667045776715,1,7087.135692361574
+Subway -> Deli / Bodega -> Office -> Coffee Shop -> Office,5,295.56667045776715,2,26214.438987926183
+Other Great Outdoors -> Home (private),2,289.82135207667875,15,289.82135207667875
+Subway -> Office,2,284.93955421658893,21,284.93955421658893
+Subway -> Office -> Gym / Fitness Center,3,284.93955421658893,1,972.2808259399192
+Food & Drink Shop -> Hotel,2,284.4948139115001,4,284.4948139115001
+Food & Drink Shop -> Hotel -> Coffee Shop,3,284.4948139115001,1,5315.351769271181
+Food & Drink Shop -> Hotel -> Train Station,3,284.4948139115001,1,5992.5130220687415
+Hotel -> Airport,2,284.4948139115001,1,284.4948139115001
+Clothing Store -> Coffee Shop,2,282.5436156423219,3,282.5436156423219
+Building -> Hotel,2,276.91747019957154,2,276.91747019957154
+Hotel -> Building,2,276.91747019957154,2,276.91747019957154
+Hotel -> Building -> Office,3,276.91747019957154,1,13107.219493963092
+Bar -> American Restaurant,2,274.1423084367639,9,274.1423084367639
+Bar -> American Restaurant -> Bar,3,274.1423084367639,1,1360.5581233528285
+Neighborhood -> Food & Drink Shop,2,268.68954647197233,6,268.68954647197233
+Neighborhood -> Food & Drink Shop -> Office,3,268.68954647197233,1,2184.536582327182
+Pizza Place -> Food & Drink Shop,2,267.5883598061036,3,267.5883598061036
+Pizza Place -> Food & Drink Shop -> Building,3,267.5883598061036,1,14122.790980178148
+Pizza Place -> Food & Drink Shop -> Building -> Office,4,267.5883598061036,1,13107.219493963092
+Pizza Place -> Food & Drink Shop -> Office,3,267.5883598061036,1,4369.073164654364
+Food & Drink Shop -> Building,2,263.48490634660726,5,263.48490634660726
+Food & Drink Shop -> Building -> Gym / Fitness Center,3,263.48490634660726,1,4083.57946894766
+Food & Drink Shop -> Building -> Gym / Fitness Center -> Food & Drink Shop,4,263.48490634660726,1,21763.853264229758
+Food & Drink Shop -> Building -> Office,3,263.48490634660726,2,5242.887797585236
+Food & Drink Shop -> Bus Station,2,262.742695342814,6,262.742695342814
+Train Station -> Coffee Shop,2,262.12693656679795,7,262.12693656679795
+Train Station -> Coffee Shop -> Office,3,262.12693656679795,1,1872.459927709013
+Train Station -> Coffee Shop -> Train Station,3,262.12693656679795,1,3424.2931554678526
+Pizza Place -> Coffee Shop,2,261.41074275104165,3,261.41074275104165
+Pizza Place -> Coffee Shop -> American Restaurant,3,261.41074275104165,1,14509.235509486505
+American Restaurant -> Office,2,260.84018893458887,8,260.84018893458887
+American Restaurant -> Office -> Coffee Shop,3,260.84018893458887,1,2657.6758846355906
+Coffee Shop -> Park,2,260.6477224861525,7,260.6477224861525
+College Academic Building -> Park,2,260.2524423489275,4,260.2524423489275
+College Academic Building -> Park -> Other Great Outdoors,3,260.2524423489275,1,8086.015722939337
+Hotel -> Office,2,257.00430380319784,6,257.00430380319784
+Hotel -> Office -> Building,3,257.00430380319784,1,7061.395490089074
+Hotel -> Office -> Building -> Office,4,257.00430380319784,1,13107.219493963092
+Hotel -> Office -> Building -> Office -> Building,5,257.00430380319784,1,42368.37294053445
+Bus Station -> Coffee Shop,2,256.67694660464457,5,256.67694660464457
+Bus Station -> Coffee Shop -> Food & Drink Shop,3,256.67694660464457,1,4352.770652845951
+Bus Station -> Coffee Shop -> Food & Drink Shop -> Coffee Shop,4,256.67694660464457,1,21261.407077084725
+Food & Drink Shop -> Deli / Bodega,2,253.6579634525613,5,253.6579634525613
+Food & Drink Shop -> Deli / Bodega -> Bus Station,3,253.6579634525613,1,7041.504235187414
+Park -> Gym / Fitness Center,2,250.30697270257116,5,250.30697270257116
+Park -> Gym / Fitness Center -> Park,3,250.30697270257116,1,6128.945017317242
+Building -> Gym / Fitness Center,2,247.1900404931998,5,247.1900404931998
+Building -> Gym / Fitness Center -> Food & Drink Shop,3,247.1900404931998,1,4352.770652845951
+Clothing Store -> College Academic Building,2,246.85073850703918,2,246.85073850703918
+Drugstore / Pharmacy -> Subway,2,243.95979148895063,4,243.95979148895063
+Drugstore / Pharmacy -> Subway -> Deli / Bodega,3,243.95979148895063,1,10197.050130792964
+Drugstore / Pharmacy -> Subway -> Deli / Bodega -> Coffee Shop,4,243.95979148895063,1,21261.407077084725
+Drugstore / Pharmacy -> Subway -> Deli / Bodega -> Coffee Shop -> Office,5,243.95979148895063,2,26214.438987926183
+Drugstore / Pharmacy -> Subway -> Deli / Bodega -> Office,4,243.95979148895063,2,26214.438987926183
+Drugstore / Pharmacy -> Subway -> Deli / Bodega -> Office -> Coffee Shop,5,243.95979148895063,1,10630.703538542362
+American Restaurant -> Bar,2,243.68205194379019,8,243.68205194379019
+College Academic Building -> Hotel,2,242.81722970790457,2,242.81722970790457
+College Academic Building -> Hotel -> Building,3,242.81722970790457,2,42368.37294053445
+College Academic Building -> Hotel -> Building -> Office,4,242.81722970790457,1,13107.219493963092
+Neighborhood -> Office,2,242.72628692524242,9,242.72628692524242
+Neighborhood -> Office -> Gym / Fitness Center,3,242.72628692524242,1,2268.6552605264783
+Drugstore / Pharmacy -> Train Station,2,242.1217382654037,3,242.1217382654037
+Drugstore / Pharmacy -> Pizza Place,2,241.46020346139989,1,241.46020346139989
+Pizza Place -> Drugstore / Pharmacy,2,241.46020346139989,1,241.46020346139989
+Bar -> Hotel,2,240.09849235638148,5,240.09849235638148
+Bar -> Hotel -> Bus Station,3,240.09849235638148,1,7041.504235187414
+Bar -> Hotel -> Subway,3,240.09849235638148,1,3622.8029036109165
+Bar -> Hotel -> Subway -> Coffee Shop,4,240.09849235638148,1,21261.407077084725
+Hotel -> Bar,2,240.09849235638148,5,240.09849235638148
+Hotel -> Bar -> American Restaurant,3,240.09849235638148,1,8705.541305691902
+Neighborhood -> Clothing Store,2,239.2318885531182,2,239.2318885531182
+Coffee Shop -> Food & Drink Shop,2,238.00082548975436,9,238.00082548975436
+Coffee Shop -> Food & Drink Shop -> Coffee Shop,3,238.00082548975436,1,2362.378564120525
+Coffee Shop -> Food & Drink Shop -> Office,3,238.00082548975436,1,1456.3577215514547
+Building -> Bar,2,237.1917309477086,8,237.1917309477086
+Medical Center -> Subway,2,234.48562482918555,4,234.48562482918555
+Subway -> Medical Center,2,234.4856248291855,4,234.4856248291855
+Subway -> Medical Center -> Subway,3,234.4856248291855,3,13585.510888540937
+Hotel -> Pizza Place,2,234.3584327713587,1,234.3584327713587
+Pizza Place -> Medical Center,2,232.0831081813455,1,232.0831081813455
+Bus Station -> Hotel,2,230.11451748978482,2,230.11451748978482
+Food & Drink Shop -> Park,2,228.69197825810605,6,228.69197825810605
+Food & Drink Shop -> Park -> Coffee Shop,3,228.69197825810605,1,3543.567846180787
+Food & Drink Shop -> Park -> Neighborhood,3,228.69197825810605,1,6000.733204540715
+Food & Drink Shop -> Gym / Fitness Center,2,228.55855236647355,8,228.55855236647355
+Food & Drink Shop -> Gym / Fitness Center -> Deli / Bodega,3,228.55855236647355,1,5098.525065396482
+Food & Drink Shop -> Gym / Fitness Center -> Food & Drink Shop,3,228.55855236647355,2,5440.963316057439
+Food & Drink Shop -> Gym / Fitness Center -> Park,3,228.55855236647355,1,3830.5906358232764
+Food & Drink Shop -> Office,2,228.23516531776528,14,228.23516531776528
