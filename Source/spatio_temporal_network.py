@@ -100,7 +100,7 @@ class LearningParameters:
 
 
 @dataclass(frozen=True)
-class PatternStep:
+class DependencyRuleEndpoint:
     neuron_id: int
     event_type: str
     longitude: float
@@ -108,27 +108,29 @@ class PatternStep:
 
 
 @dataclass(frozen=True)
-class SpatioTemporalPattern:
-    steps: tuple[PatternStep, ...]
+class SpatioTemporalDependencyRule:
+    """One Spatio-Temporal Dependency Rule induced by a directed synapse."""
+
+    endpoints: tuple[DependencyRuleEndpoint, ...]
     weights: tuple[float, ...]
 
     @property
-    def support(self) -> float:
+    def significance(self) -> float:
         if not self.weights:
             return 0.0
         return min(self.weights)
 
     @property
-    def event_type_sequence(self) -> tuple[str, ...]:
-        return tuple(step.event_type for step in self.steps)
+    def event_type_rule(self) -> tuple[str, ...]:
+        return tuple(endpoint.event_type for endpoint in self.endpoints)
 
 
 @dataclass(frozen=True)
-class PatternSnapshot:
+class DependencyRuleSnapshot:
     processed_events: int
     event_timestamp: float
     significant_synapse_count: int
-    patterns: tuple[SpatioTemporalPattern, ...]
+    rules: tuple[SpatioTemporalDependencyRule, ...]
 
 
 @dataclass
@@ -224,8 +226,12 @@ class SpatioTemporalNetwork:
         }
 
 
-class OnlineSTSPMiner:
-    """Online implementation of Algorithms 1-3 from the manuscript."""
+class OnlineSTDRMiner:
+    """Online implementation of STDR discovery from the manuscript.
+
+    Rule extraction returns significant Spatio-Temporal Dependency Rules
+    (STDRs): one directed rule for each significant synapse.
+    """
 
     def __init__(
         self,
@@ -238,7 +244,7 @@ class OnlineSTSPMiner:
         self.last_spike_times: dict[int, float] = {}
         self.processed_events = 0
 
-    def process_event(self, event: pd.Series, extract_patterns: bool = False) -> list[SpatioTemporalPattern]:
+    def process_event(self, event: pd.Series, extract_rules: bool = False) -> list[SpatioTemporalDependencyRule]:
         spiking_neuron_id = self.network.neuron_id_for_event(event)
         current_time = float(event["timestamp"])
         updated_synapses = self.lazy_weight_update(spiking_neuron_id, current_time)
@@ -254,64 +260,64 @@ class OnlineSTSPMiner:
         self.last_spike_times[spiking_neuron_id] = current_time
         self.processed_events += 1
 
-        if extract_patterns:
-            return self.extract_patterns()
+        if extract_rules:
+            return self.extract_rules()
         return []
 
     def process_events(
         self,
         events: pd.DataFrame,
         max_events: int | None = None,
-        extract_patterns_every: int | None = None,
-    ) -> list[SpatioTemporalPattern]:
+        extract_rules_every: int | None = None,
+    ) -> list[SpatioTemporalDependencyRule]:
         if max_events is not None:
             events = events.head(max_events)
 
-        latest_patterns: list[SpatioTemporalPattern] = []
+        latest_rules: list[SpatioTemporalDependencyRule] = []
         for row_number, event in enumerate(events.sort_values("timestamp").itertuples(index=False), start=1):
             event_series = pd.Series(event._asdict())
             should_extract = (
-                extract_patterns_every is not None
-                and row_number % extract_patterns_every == 0
+                extract_rules_every is not None
+                and row_number % extract_rules_every == 0
             )
-            latest_patterns = self.process_event(event_series, extract_patterns=should_extract)
+            latest_rules = self.process_event(event_series, extract_rules=should_extract)
 
-        if extract_patterns_every is None:
-            latest_patterns = self.extract_patterns()
-        return latest_patterns
+        if extract_rules_every is None:
+            latest_rules = self.extract_rules()
+        return latest_rules
 
-    def pattern_snapshots(
+    def rule_snapshots(
         self,
         events: pd.DataFrame,
         every: int = 1,
         max_events: int | None = None,
-        max_path_length: int | None = None,
-        max_patterns: int | None = None,
-    ) -> Iterable[PatternSnapshot]:
-        """Yield current patterns while processing the stream.
+        max_rule_length: int | None = None,
+        max_rules: int | None = None,
+    ) -> Iterable[DependencyRuleSnapshot]:
+        """Yield current dependency rules while processing the stream.
 
-        This is the notebook-friendly form of Algorithm 1's Display(P) step.
+        This is the notebook-friendly form of Algorithm 1's Display(R) step.
         """
         if every <= 0:
             raise ValueError("every must be a positive integer.")
-        max_path_length = _normalize_optional_limit(max_path_length, "max_path_length")
-        max_patterns = _normalize_optional_limit(max_patterns, "max_patterns")
+        max_rule_length = _normalize_optional_limit(max_rule_length, "max_rule_length")
+        max_rules = _normalize_optional_limit(max_rules, "max_rules")
         if max_events is not None:
             events = events.head(max_events)
 
         for row_number, event in enumerate(events.sort_values("timestamp").itertuples(index=False), start=1):
             event_series = pd.Series(event._asdict())
-            self.process_event(event_series, extract_patterns=False)
+            self.process_event(event_series, extract_rules=False)
             if row_number % every == 0:
-                patterns = self.extract_patterns(
-                    max_path_length=max_path_length,
-                    max_patterns=max_patterns,
+                rules = self.extract_rules(
+                    max_rule_length=max_rule_length,
+                    max_rules=max_rules,
                 )
-                yield PatternSnapshot(
+                yield DependencyRuleSnapshot(
                     processed_events=self.processed_events,
                     event_timestamp=float(event_series["timestamp"]),
                     significant_synapse_count=len(self.significant_synapses),
-                    patterns=tuple(patterns),
+                    rules=tuple(rules),
                 )
 
     def lazy_weight_update(self, spiking_neuron_id: int, current_time: float) -> set[tuple[int, int]]:
@@ -352,18 +358,18 @@ class OnlineSTSPMiner:
 
         return updated_synapses
 
-    def extract_patterns(
+    def extract_rules(
         self,
-        max_path_length: int | None = None,
-        max_patterns: int | None = None,
-    ) -> list[SpatioTemporalPattern]:
-        max_path_length = _normalize_optional_limit(max_path_length, "max_path_length")
-        max_patterns = _normalize_optional_limit(max_patterns, "max_patterns")
-        return extract_patterns_from_synapses(
+        max_rule_length: int | None = None,
+        max_rules: int | None = None,
+    ) -> list[SpatioTemporalDependencyRule]:
+        max_rule_length = _normalize_optional_limit(max_rule_length, "max_rule_length")
+        max_rules = _normalize_optional_limit(max_rules, "max_rules")
+        return extract_rules_from_synapses(
             network=self.network,
             synapses=self.significant_synapses,
-            max_path_length=max_path_length,
-            max_patterns=max_patterns,
+            max_rule_length=max_rule_length,
+            max_rules=max_rules,
         )
 
     def significant_synapses_frame(self) -> pd.DataFrame:
@@ -399,23 +405,35 @@ class OnlineSTSPMiner:
             )
         return pd.DataFrame(rows).sort_values("weight", ascending=False, ignore_index=True)
 
-    def patterns_frame(self, patterns: Iterable[SpatioTemporalPattern]) -> pd.DataFrame:
+    def rules_frame(self, rules: Iterable[SpatioTemporalDependencyRule]) -> pd.DataFrame:
         rows = []
-        for pattern in patterns:
+        for rule in rules:
             rows.append(
                 {
-                    "length": len(pattern.steps),
-                    "support": pattern.support,
-                    "support_ratio": pattern.support / self.parameters.max_weight,
-                    "event_type_sequence": " -> ".join(pattern.event_type_sequence),
+                    "length": len(rule.endpoints),
+                    "significance": rule.significance,
+                    "significance_ratio": rule.significance / self.parameters.max_weight,
+                    "event_type_rule": " -> ".join(rule.event_type_rule),
+                    "presynaptic_id": rule.endpoints[0].neuron_id,
+                    "postsynaptic_id": rule.endpoints[-1].neuron_id,
+                    "presynaptic_event_type": rule.endpoints[0].event_type,
+                    "postsynaptic_event_type": rule.endpoints[-1].event_type,
+                    "presynaptic_location": (
+                        rule.endpoints[0].longitude,
+                        rule.endpoints[0].latitude,
+                    ),
+                    "postsynaptic_location": (
+                        rule.endpoints[-1].longitude,
+                        rule.endpoints[-1].latitude,
+                    ),
                     "locations": [
-                        (step.longitude, step.latitude)
-                        for step in pattern.steps
+                        (endpoint.longitude, endpoint.latitude)
+                        for endpoint in rule.endpoints
                     ],
-                    "weights": pattern.weights,
+                    "weights": rule.weights,
                     "weight_ratios": tuple(
                         weight / self.parameters.max_weight
-                        for weight in pattern.weights
+                        for weight in rule.weights
                     ),
                 }
             )
@@ -423,39 +441,45 @@ class OnlineSTSPMiner:
             return pd.DataFrame(
                 columns=[
                     "length",
-                    "support",
-                    "support_ratio",
-                    "event_type_sequence",
+                    "significance",
+                    "significance_ratio",
+                    "event_type_rule",
+                    "presynaptic_id",
+                    "postsynaptic_id",
+                    "presynaptic_event_type",
+                    "postsynaptic_event_type",
+                    "presynaptic_location",
+                    "postsynaptic_location",
                     "locations",
                     "weights",
                     "weight_ratios",
                 ]
             )
         return pd.DataFrame(rows).sort_values(
-            ["support", "length"],
+            ["significance", "length"],
             ascending=[False, False],
             ignore_index=True,
         )
 
-    def dump_pattern_snapshot(
+    def dump_rule_snapshot(
         self,
-        snapshot: PatternSnapshot,
+        snapshot: DependencyRuleSnapshot,
         output_dir: Path | str,
         prefix: str = "snapshot",
     ) -> tuple[Path, Path]:
-        """Write one online pattern snapshot to JSON metadata and CSV patterns."""
+        """Write one online dependency-rule snapshot to JSON metadata and CSV rules."""
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
 
         stem = f"{prefix}_{snapshot.processed_events:06d}"
         metadata_path = output_dir / f"{stem}_metadata.json"
-        patterns_path = output_dir / f"{stem}_patterns.csv"
+        rules_path = output_dir / f"{stem}_rules.csv"
 
         metadata = {
             "processed_events": snapshot.processed_events,
             "event_timestamp": snapshot.event_timestamp,
             "significant_synapse_count": snapshot.significant_synapse_count,
-            "pattern_count": len(snapshot.patterns),
+            "rule_count": len(snapshot.rules),
             "network": self.network.summary(),
             "learning": {
                 "eta": self.parameters.eta,
@@ -468,8 +492,8 @@ class OnlineSTSPMiner:
             },
         }
         metadata_path.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
-        self.patterns_frame(snapshot.patterns).to_csv(patterns_path, index=False)
-        return metadata_path, patterns_path
+        self.rules_frame(snapshot.rules).to_csv(rules_path, index=False)
+        return metadata_path, rules_path
 
     def _apply_weight_dynamics(self, state: SynapseState, delta_time: float) -> None:
         if delta_time <= 0:
@@ -501,50 +525,49 @@ class OnlineSTSPMiner:
         return delta_time
 
 
-def clear_snapshot_dumps(output_dir: Path | str, prefix: str = "snapshot") -> None:
-    """Remove previous snapshot dump files created by dump_pattern_snapshot."""
+def clear_rule_snapshot_dumps(output_dir: Path | str, prefix: str = "snapshot") -> None:
+    """Remove previous snapshot dump files created by dump_rule_snapshot."""
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     for path in output_dir.glob(f"{prefix}_*_metadata.json"):
         path.unlink()
-    for path in output_dir.glob(f"{prefix}_*_patterns.csv"):
+    for path in output_dir.glob(f"{prefix}_*_rules.csv"):
         path.unlink()
 
 
-def extract_patterns_from_synapses(
+def extract_rules_from_synapses(
     network: SpatioTemporalNetwork,
     synapses: Iterable[tuple[int, int]],
-    max_path_length: int | None = None,
-    max_patterns: int | None = None,
-) -> list[SpatioTemporalPattern]:
-    """Extract all significant STSPs from the significant-synapse graph."""
-    max_path_length = _normalize_optional_limit(max_path_length, "max_path_length")
-    max_patterns = _normalize_optional_limit(max_patterns, "max_patterns")
-    adjacency: dict[int, set[int]] = {}
-    synapse_set = set(synapses)
-    for presynaptic_id, postsynaptic_id in synapse_set:
-        adjacency.setdefault(presynaptic_id, set()).add(postsynaptic_id)
-        adjacency.setdefault(postsynaptic_id, set())
+    max_rule_length: int | None = None,
+    max_rules: int | None = None,
+) -> list[SpatioTemporalDependencyRule]:
+    """Extract significant STDRs induced by significant synapses.
 
-    if not synapse_set:
+    Definition 3.2 defines an STDR as one directed dependency
+    ``(event type, location) -> (event type, location)`` whose significance is
+    the synaptic weight. Therefore each significant synapse induces exactly one
+    output rule; longer graph paths are not expanded in the STDR model.
+    """
+    max_rule_length = _normalize_optional_limit(max_rule_length, "max_rule_length")
+    max_rules = _normalize_optional_limit(max_rules, "max_rules")
+    if max_rule_length is not None and max_rule_length < 2:
         return []
 
-    patterns: list[SpatioTemporalPattern] = []
-    starts = sorted(adjacency)
-
-    for start in starts:
-        _collect_paths(
-            network=network,
-            adjacency=adjacency,
-            path=(start,),
-            patterns=patterns,
-            max_path_length=max_path_length,
-            max_patterns=max_patterns,
+    rules = [
+        _rule_from_synapse(network, presynaptic_id, postsynaptic_id)
+        for presynaptic_id, postsynaptic_id in set(synapses)
+    ]
+    rules.sort(
+        key=lambda rule: (
+            -rule.significance,
+            rule.event_type_rule,
+            tuple(endpoint.neuron_id for endpoint in rule.endpoints),
         )
-        if max_patterns is not None and len(patterns) >= max_patterns:
-            break
+    )
 
-    return patterns
+    if max_rules is not None:
+        return rules[:max_rules]
+    return rules
 
 
 def _normalize_optional_limit(value: int | None, name: str) -> int | None:
@@ -555,46 +578,20 @@ def _normalize_optional_limit(value: int | None, name: str) -> int | None:
     return value
 
 
-def _collect_paths(
+def _rule_from_synapse(
     network: SpatioTemporalNetwork,
-    adjacency: dict[int, set[int]],
-    path: tuple[int, ...],
-    patterns: list[SpatioTemporalPattern],
-    max_path_length: int | None,
-    max_patterns: int | None,
-) -> None:
-    if max_patterns is not None and len(patterns) >= max_patterns:
-        return
-
-    if max_path_length is not None and len(path) >= max_path_length:
-        return
-
-    current = path[-1]
-    for next_node in sorted(node_id for node_id in adjacency[current] if node_id not in path):
-        new_path = path + (next_node,)
-        _append_pattern(network, new_path, patterns)
-        if max_patterns is not None and len(patterns) >= max_patterns:
-            return
-
-        _collect_paths(
-            network=network,
-            adjacency=adjacency,
-            path=new_path,
-            patterns=patterns,
-            max_path_length=max_path_length,
-            max_patterns=max_patterns,
-        )
-        if max_patterns is not None and len(patterns) >= max_patterns:
-            return
+    presynaptic_id: int,
+    postsynaptic_id: int,
+) -> SpatioTemporalDependencyRule:
+    return _rule_from_path(network, (presynaptic_id, postsynaptic_id))
 
 
-def _append_pattern(
+def _rule_from_path(
     network: SpatioTemporalNetwork,
     path: tuple[int, ...],
-    patterns: list[SpatioTemporalPattern],
-) -> None:
-    steps = tuple(
-        PatternStep(
+) -> SpatioTemporalDependencyRule:
+    endpoints = tuple(
+        DependencyRuleEndpoint(
             neuron_id=neuron.neuron_id,
             event_type=neuron.event_type,
             longitude=neuron.longitude,
@@ -606,7 +603,7 @@ def _append_pattern(
         network.get_synapse_state(path[index], path[index + 1]).weight
         for index in range(len(path) - 1)
     )
-    patterns.append(SpatioTemporalPattern(steps=steps, weights=weights))
+    return SpatioTemporalDependencyRule(endpoints=endpoints, weights=weights)
 
 
 def initialize_network_from_csv(
