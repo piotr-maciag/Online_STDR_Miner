@@ -50,6 +50,8 @@ An example interactive rule-cube visualization is available here:
 
 [Example STDR rule cube](Results/Visualizations/network_cube_20120403_180224_to_20120403_210919.html)
 
+![Example STDR rule cube screenshot](Cube_state.png)
+
 ## Notes
 
 The generated HTML visualizations are self-contained Plotly pages except for Plotly loaded from CDN. OpenStreetMap basemap rendering requires `requests` and `pillow`, both listed in `requirements.txt`.
