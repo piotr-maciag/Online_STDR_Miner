@@ -65,7 +65,7 @@ def visualize_significant_synapse_cube(
 
     The bottom plane shows event coordinates. Neurons are placed at grid-cell
     centers, one event type per z-layer. Significant synapses are rendered as
-    directed lines whose color and width reflect ``weight / w_max``.
+    directed lines whose color and width reflect ``weight / w_max ratio``.
     """
     go = _import_plotly()
 
@@ -116,8 +116,8 @@ def visualize_significant_synapse_cube(
     )
     processed_time_span = _processed_time_span_label(processed_events)
     figure_title = title or (
-        f"Significant synapse cube after {miner.processed_events} events "
-        f"({processed_time_span}, theta={miner.parameters.theta})"
+        f"After {miner.processed_events} events "
+        f"{processed_time_span}"
     )
     fig.update_layout(
         title=figure_title,
@@ -143,7 +143,7 @@ def visualize_significant_synapse_cube(
             "domain": {"x": [0.0, 1.0], "y": [0.0, 1.0]},
         },
         legend={"itemsizing": "constant"},
-        margin={"l": 0, "r": 0, "t": 42, "b": 0},
+        margin={"l": 0, "r": 0, "t": 72, "b": 0},
         autosize=True,
         height=900,
     )
@@ -224,13 +224,21 @@ def _import_plotly():
 
 def _processed_time_span_label(processed_events: pd.DataFrame) -> str:
     if "Occurrence_time" in processed_events.columns:
-        first_time = processed_events["Occurrence_time"].iloc[0]
-        last_time = processed_events["Occurrence_time"].iloc[-1]
+        first_time = _format_occurrence_time_label(
+            processed_events["Occurrence_time"].iloc[0]
+        )
+        last_time = _format_occurrence_time_label(
+            processed_events["Occurrence_time"].iloc[-1]
+        )
         return f"time span: {first_time} - {last_time}"
 
     first_timestamp = float(processed_events["timestamp"].iloc[0])
     last_timestamp = float(processed_events["timestamp"].iloc[-1])
     return f"time span: t={first_timestamp:.2f} - t={last_timestamp:.2f}"
+
+
+def _format_occurrence_time_label(value) -> str:
+    return str(value).replace(" +0000 ", " ").replace(" +0000", "")
 
 
 def _write_filterable_html(
@@ -412,15 +420,14 @@ def _write_filterable_html(
       {plot_div}
     </main>
     <aside class="synapse-panel">
-      <h2>Most Significant Synapses</h2>
+      <h2>Most Significant STDRs</h2>
       <div class="synapse-count" id="synapse-count"></div>
       <table class="synapse-table">
         <thead>
           <tr>
-            <th>Synapse</th>
+            <th>STDR</th>
             <th>Cells</th>
-            <th>Weight</th>
-            <th>Ratio</th>
+            <th>Significance Ratio</th>
           </tr>
         </thead>
         <tbody id="synapse-table-body"></tbody>
@@ -585,7 +592,6 @@ def _write_filterable_html(
         <tr>
           <td>${{escapeHtml(row.presynaptic_event_type)}} &rarr; ${{escapeHtml(row.postsynaptic_event_type)}}</td>
           <td>${{row.presynaptic_cell_id}} &rarr; ${{row.postsynaptic_cell_id}}</td>
-          <td class="number">${{row.weight.toFixed(6)}}</td>
           <td class="number">${{row.weight_ratio.toFixed(6)}}</td>
         </tr>
       `).join("");
@@ -1033,9 +1039,16 @@ def _add_synapse_colorbar(fig, go, weight_ratios: list[float]) -> None:
                 "cmax": max_weight_ratio,
                 "showscale": True,
                 "colorbar": {
-                    "title": "weight / w_max",
-                    "thickness": 14,
-                    "len": 0.72,
+                    "title": {
+                        "text": "Significance<br>Ratio",
+                        "font": {"size": 10},
+                    },
+                    "thickness": 10,
+                    "len": 0.4,
+                    "x": 1.15,
+                    "xanchor": "left",
+                    "y": 0.9,
+                    "yanchor": "top",
                 },
             },
             hoverinfo="skip",
